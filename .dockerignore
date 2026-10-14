@@ -1,0 +1,12 @@
+**/bin
+**/obj
+**/node_modules
+**/dist
+.git
+.github
+tests
+tools
+eval
+docs
+web
+*.md

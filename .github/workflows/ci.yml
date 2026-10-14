@@ -1,0 +1,91 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  dotnet:
+    runs-on: ubuntu-latest
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # SonarCloud yeni kod analizi için tam geçmiş ister
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - uses: actions/setup-java@v4
+        if: env.SONAR_TOKEN != ''
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: SonarCloud analizini başlat
+        if: env.SONAR_TOKEN != ''
+        run: |
+          dotnet tool install --global dotnet-sonarscanner
+          dotnet sonarscanner begin \
+            /k:"${{ vars.SONAR_PROJECT_KEY || 'l4NGEL_belge-rag' }}" \
+            /o:"${{ vars.SONAR_ORGANIZATION || 'l4ngel' }}" \
+            /d:sonar.token="$SONAR_TOKEN" \
+            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" \
+            /d:sonar.exclusions="web/**,eval/**,tools/**" \
+            /d:sonar.coverage.exclusions="tests/**,tools/**"
+      - run: dotnet restore
+      - run: dotnet build --no-restore -c Release
+      - name: Birim testleri
+        run: >
+          dotnet test tests/BelgeRag.UnitTests --no-build -c Release
+          --collect "XPlat Code Coverage" --logger "trx;LogFileName=unit.trx"
+          -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover,cobertura
+      - name: Integration testleri (Testcontainers)
+        run: >
+          dotnet test tests/BelgeRag.IntegrationTests --no-build -c Release
+          --collect "XPlat Code Coverage" --logger "trx;LogFileName=integration.trx"
+          -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover,cobertura
+      - name: SonarCloud analizini bitir
+        if: env.SONAR_TOKEN != ''
+        run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: tests/**/TestResults/**
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  compose:
+    runs-on: ubuntu-latest
+    needs: [dotnet, web]
+    steps:
+      - uses: actions/checkout@v4
+      - name: docker compose up
+        run: docker compose up -d --build --wait --wait-timeout 300
+      - name: Sağlık ve uçtan uca duman testi
+        run: ./scripts/smoke.sh http://localhost:8081
+      - name: Loglar
+        if: failure()
+        run: docker compose logs --no-color
+      - if: always()
+        run: docker compose down -v

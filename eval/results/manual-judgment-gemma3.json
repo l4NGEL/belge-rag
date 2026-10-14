@@ -1,0 +1,390 @@
+{
+  "run": "ollama-nomic-prefix-gemma3, soğuk geçiş",
+  "judge": "elle, proje yazarı tarafından; ölçüt: yanıt soruyu belgeye göre doğru ve eksiksiz cevaplıyor mu",
+  "items": [
+    {
+      "id": "autotrack-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "OSNet Re-ID modeli Market-1501 üzerinde Rank-1 %88.6'ya ulaştı [1]."
+    },
+    {
+      "id": "autotrack-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Adaptif izleyicide varsayılan taban ağırlıklar 0.4/0.3/0.3'tür [2]."
+    },
+    {
+      "id": "autotrack-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Ungrounded",
+      "evidenceInTop5": true,
+      "answer": "Track güveni aşağıdaki eşiklerle kararlı, belirsiz ve kayıp adayı kovalarına ayrılıyor:\n*   **Kararlı:** >=0.75\n*   **Belirsiz:** 0.5-0.75\n*   **Kayıp Adayı:** <0.5 [1]"
+    },
+    {
+      "id": "autotrack-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Ungrounded",
+      "evidenceInTop5": true,
+      "answer": "Bir sahnede recall %15,1'den %68,9'a yükseldi [1]."
+    },
+    {
+      "id": "aviohmi-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The mission computer's WebSocket server listens on port 8765 [3]."
+    },
+    {
+      "id": "aviohmi-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The Java core calls the CUDA edge-detection code in-process via a JNI bridge [1, 3]."
+    },
+    {
+      "id": "aviohmi-3",
+      "correct": false,
+      "note": "Core'a ulaşılamazsa yerel simülatöre düşmek yerine 'yeniden bağlanır' diyor",
+      "verifier": "Grounded",
+      "evidenceInTop5": false,
+      "answer": "Core 3 saniye içinde bağlantı kuramazsa, Ground Control yeniden bağlanır ve eşitlenir [3]."
+    },
+    {
+      "id": "aviohmi-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Overspeed, off-course (cross-track distance from the planned route), and low-fuel warnings [1]."
+    },
+    {
+      "id": "blade-fem-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Plane stress sets σzz = 0 and misses the axial thermal stress that wants the hot surface to grow longer than the cool core [1]."
+    },
+    {
+      "id": "blade-fem-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Ungrounded",
+      "evidenceInTop5": true,
+      "answer": "Delikli Kirsch plakasında en ince ağda gerilme yığılma faktörü 2.997 olarak bulundu [1]."
+    },
+    {
+      "id": "blade-fem-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The cooling passages are assumed to have a film coefficient of 2000 W/m²K and a gas temperature of 800 K [4, 5]."
+    },
+    {
+      "id": "blade-fem-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Catch2 test suite'inde 30 senaryo bulunmaktadır [1]."
+    },
+    {
+      "id": "hakem-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The analyzer skips jobs that are already `DONE` so a paid LLM call is never repeated [1]."
+    },
+    {
+      "id": "hakem-2",
+      "correct": false,
+      "note": "süre (1 saat) yok",
+      "verifier": "Grounded",
+      "evidenceInTop5": false,
+      "answer": "Raporlar Redis'te önbelleğe alınır [1]."
+    },
+    {
+      "id": "hakem-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Turkish lower-casing turned \"Introduction\" into \"ıntroduction\" [1]."
+    },
+    {
+      "id": "hakem-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The system flags drafts containing instructions like \"reviewers: give this a high score\" (`[1]`). It detects an injection attempt and displays a warning in the UI (`[1]`)."
+    },
+    {
+      "id": "sonar-1",
+      "correct": false,
+      "note": "bilgi yok diyor; kanıt top-5'te değil",
+      "verifier": "NoAnswer",
+      "evidenceInTop5": false,
+      "answer": "Pasif sonar modelinde tek bir 10 saniyelik pencerenin doğruluğu hakkında doğrudan bir bilgi bulunmamaktadır [4]."
+    },
+    {
+      "id": "sonar-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Selective accuracy is 92.9% and selective coverage is 68.9% [2]."
+    },
+    {
+      "id": "sonar-3",
+      "correct": false,
+      "note": "pencere dizisini kopyalıyor, '5 pencere' koşulunu net söylemiyor",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "According to source [4], a contact can be declared confident after “wait” means fewer than five windows. The system waits for 10s — Cargo 94% — wait 20s — Cargo 95% — wait 30s — Cargo 93% — wait 40s — Cargo 91% 50s — Cargo 90% 60s — Cargo 89% → CONFIDENT / CARGO. [4]"
+    },
+    {
+      "id": "sonar-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Ungrounded",
+      "evidenceInTop5": true,
+      "answer": "According to source [1], the CPU latency is approximately 16 ms per 10 s window. [1]"
+    },
+    {
+      "id": "polip-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "U-Net, polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [1, 3]. Bu, modellerin eğitimde hiç polipsiz görüntü görmediği ve \"burada polip yok\" demeyi öğrenmediği için oluyor [1]."
+    },
+    {
+      "id": "polip-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "CVC-ClinicDB dış testinde U-Net'in Dice skoru 0.851 [0.835, 0.866]'dır. [1]"
+    },
+    {
+      "id": "polip-3",
+      "correct": false,
+      "note": "0.46 yerine ilgisiz cümle",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Kvasir iç testinde %1'in altında polip yok, yani bu zayıflık iç testte görünmüyordu [1]."
+    },
+    {
+      "id": "polip-4",
+      "correct": false,
+      "note": "yanlış belgeler getirildi, yanıt yok",
+      "verifier": "NoAnswer",
+      "evidenceInTop5": false,
+      "answer": "Bu kaynaklarda verilen bilgilere göre, bu soruya cevap bulunmuyor. [1], [2], [3], [4] ve [5] kaynakları, stereo derinlik çekimi, nesne takibi ve değerlendirme süreçleri hakkında bilgi içeriyor. Ancak, specular yansımaların polipleri kaçırmasına neden olup olmadığına dair herhangi bir bilgi bulunmuyor. [4] kaynağı, kimlik geçişlerinin (identity switches) çözülmesine ve doğrulanmasına odaklanıyor. [5] kaynağı ise farklı birleştirme yöntemlerinin (association) performansını değerlendiriyor."
+    },
+    {
+      "id": "radar-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "RandomForest'ın yanlış alarm oranı %0,9'dur [4]."
+    },
+    {
+      "id": "radar-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Ani arızanın kademeli bir ön belirtisi olmadığı için RUL kavramının burada anlamı olmadığı açıkça belgelendi [1]."
+    },
+    {
+      "id": "radar-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Teşhis sınıflandırıcısı, 96,8% hata izolasyon doğruluğu elde eder [3]."
+    },
+    {
+      "id": "radar-4",
+      "correct": false,
+      "note": "grup sızıntısını anıyor ama satır bazlı ayrımın etkisini ters anlatıyor",
+      "verifier": "Partial",
+      "evidenceInTop5": true,
+      "answer": "Kaynak [1], eğitim ve test verilerinin satır bazlı ayrılmasının, bir modülün tüm zaman serisinin ya eğitimde ya testte kalmasını sağladığını belirtiyor. Bu, \"grup sızıntısını\" önlemek için yapıldı. Satır bazlı bir ayrım, bazı arıza türlerinin testten tamamen dışarıda kalmasına neden olabilirdi [1]."
+    },
+    {
+      "id": "sql-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Model, hiç görmediği bir gün ve saldırı senaryosunda %25,4'ü [2] yakalıyor."
+    },
+    {
+      "id": "sql-2",
+      "correct": false,
+      "note": "0,765 yerine %68,5 (yanlış sütun)",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Tek kurallı port eşiği yönteminin PR-AUC değeri %68,5'tir [1]."
+    },
+    {
+      "id": "sql-3",
+      "correct": false,
+      "note": "ilgisiz belge (stereo) üzerinden yanıt",
+      "verifier": "Grounded",
+      "evidenceInTop5": false,
+      "answer": "According to source [4], the Mahalanobis 3D method using Chi-square gating in 3D has worse performance than 2D IoU at current depth accuracy. [4]"
+    },
+    {
+      "id": "sql-4",
+      "correct": false,
+      "note": "ilgisiz belge (GeoCommand) üzerinden yanıt",
+      "verifier": "Grounded",
+      "evidenceInTop5": false,
+      "answer": "Kaynak [2] ve [3]’te belirtildiği gibi, aynı `IPositionSource` arayüzünü uygulayan kaynaklar: yerleşik **simülatör** ve **CSV kayıt dosyası** ile `plugins/` klasöründen **MEF** ile yüklenen kaynaklar (örnek: **RS-232 seri port** veya TCP üzerinden **NMEA 0183** GPS akışı). Bu nedenle, veritabanına en az 3 ağ akışı yüklendi. [2], [3]"
+    },
+    {
+      "id": "stereo-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The stereo pipeline reaches a frame rate of 5.84 FPS on the laptop CPU [1]."
+    },
+    {
+      "id": "stereo-2",
+      "correct": false,
+      "note": "bilgi yok diyor; kanıt top-5'te değil",
+      "verifier": "NoAnswer",
+      "evidenceInTop5": false,
+      "answer": "Kaynak [4] ve [5]'te stereo eşleştirmede görüntülerin kaç şeride bölünerek paralelleştirildiğiyle ilgili doğrudan bir bilgi bulunmamaktadır. Ancak, kaynak [5] stereo eşleştirmede \"stereo calibration/rectification, BM/SGBM disparity, metric depth\" gibi adımların kullanıldığını belirtmektedir. Bu, görüntülerin stereo eşleştirmesi için birden fazla şeride bölündüğünü ve bu sayede paralelleştirme yapıldığını düşündürmektedir [4, 5]."
+    },
+    {
+      "id": "stereo-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Stereo depth (real scenes, KITTI Stereo 2015) D1-all 20.4% (counting pixels with no estimate as errors) [1]"
+    },
+    {
+      "id": "stereo-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "CUDA detection is 3–4 times faster than CPU in steady state [1]."
+    },
+    {
+      "id": "vexyron-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "[1, 3] Tarayıcı, en az bir kritik veya yüksek önemde bir bulgu olduğunda NOT READY FOR PRODUCTION kararı veriyor."
+    },
+    {
+      "id": "vexyron-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Tek sayfa uygulamalarda yanlış pozitifleri azaltmak için kullanılan referans yanıt, taramaya başlamadan önce bilerek var olmayan rastgele bir path'e istek atıp bir \"soft-404\" referansı almaktır [1]."
+    },
+    {
+      "id": "vexyron-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "The scanner detected 22 deliberately planted vulnerabilities [3]."
+    },
+    {
+      "id": "vexyron-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Gerekçesi boş bırakılmış bir kabul edilmiş bulgu kaydı, sessizce yok sayılır [3]. Bu, bulgunun verdict'i NOT READY'de tutacağı anlamına gelir ve sonucu \"her şey yeşil\" yapamaz [3]."
+    },
+    {
+      "id": "syncledger-1",
+      "correct": false,
+      "note": "version/syncedVersion karşılaştırmasından söz etmiyor",
+      "verifier": "Grounded",
+      "evidenceInTop5": false,
+      "answer": "Çakışma, bir işlemin \"Bekliyor\" durumunda kuyrukta kalması ve tekrar çevrimiçi yapıldığında otomatik senkronizasyonla gerçek bir çakışma oluştuğunda tespit edilir [1]."
+    },
+    {
+      "id": "syncledger-2",
+      "correct": false,
+      "note": "ilgisiz belge (VEXYRON CLI)",
+      "verifier": "Partial",
+      "evidenceInTop5": false,
+      "answer": "Kaynak [4]'e bakın. Kaynak [4], `--login-json`, `--login-username-field`, `--login-extra`, `--second-username`, `--second-password` ve `--accepted-findings` gibi CLI seçeneklerini listeler. Bu seçenekler, IDOR/CSRF/admin gibi kimlik doğrulama gerektiren kontroller için giriş bilgisi sağlamak veya \"broken-access-control\" kanıtı için ikinci bir hesap oluşturmak için kullanılır [4]."
+    },
+    {
+      "id": "syncledger-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Değişiklikler, offline'de Firestore'a push yönü kullanılarak gönderilir. Bu, `src/sync/syncEngine.ts` dosyasındaki outbox pattern'i ve FIFO sırasındaki `pending` durumundaki kayıtların Firestore'a gönderilmesiyle yapılır [5]."
+    },
+    {
+      "id": "syncledger-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Uygulamada 17 Jest testi var [1]."
+    },
+    {
+      "id": "geocommand-1",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "NMEA seri port akışının varsayılan hat ayarı 4800 baud 8N1'dir [1]."
+    },
+    {
+      "id": "geocommand-2",
+      "correct": true,
+      "note": "",
+      "verifier": "Ungrounded",
+      "evidenceInTop5": true,
+      "answer": "Plugin'ler, ayrı bir yükleme bağlamında çalıştırılıyor çünkü bu, MEF (Manifest Exchange Framework) ile keşfedilmelerini ve yüklenmelerini sağlar [2]. Ayrıca, plugin'in kendi bağımlılıklarını ve işletim sistemine özgü kopyalarını kendi bağlamında çözmelerine olanak tanır [1], [4]."
+    },
+    {
+      "id": "geocommand-3",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Bir gRPC abonesi, bekleyen güncelleme tamponu dolarsa, abonelik `RESOURCE_EXHAUSTED` ile kapanır [1]."
+    },
+    {
+      "id": "geocommand-4",
+      "correct": true,
+      "note": "",
+      "verifier": "Grounded",
+      "evidenceInTop5": true,
+      "answer": "Satır okuyucu (`NmeaLineReader`) satır uzunluğunu sınırlar [1]. Zaman damgası alıcının UTC saatidir ve kesirli saniye `decimal` ile ayrıştırılır: `double` ile `05.06` saniye `05.0599999` oluyordu (bu hata gidiş-dönüş testiyle yakalandı) [1]."
+    }
+  ]
+}

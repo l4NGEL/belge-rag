@@ -1,0 +1,1213 @@
+{
+  "label": "ollama-nomic-gemma3",
+  "questions": 48,
+  "ingest": {
+    "documents": 12,
+    "bytes": 179666,
+    "chunks": 327,
+    "enqueueMs": 597.1,
+    "endToEndMs": 60723.5,
+    "chunksPerSecond": 5.4
+  },
+  "retrieval": {
+    "fulltext": {
+      "hit1": 0.729,
+      "hit5": 0.854,
+      "mrr10": 0.791,
+      "evidence5": 0.75,
+      "evidence5SameLanguage": 0.865,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 5.4,
+      "p95Ms": 7.7,
+      "serverP50Ms": 3
+    },
+    "vector": {
+      "hit1": 0.708,
+      "hit5": 0.792,
+      "mrr10": 0.752,
+      "evidence5": 0.667,
+      "evidence5SameLanguage": 0.757,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 35.2,
+      "p95Ms": 53.8,
+      "serverP50Ms": 33.5
+    },
+    "hybrid": {
+      "hit1": 0.708,
+      "hit5": 0.854,
+      "mrr10": 0.778,
+      "evidence5": 0.729,
+      "evidence5SameLanguage": 0.838,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 4.6,
+      "p95Ms": 5.8,
+      "serverP50Ms": 3.2
+    },
+    "hybrid+rerank": {
+      "hit1": 0.792,
+      "hit5": 0.938,
+      "mrr10": 0.854,
+      "evidence5": 0.812,
+      "evidence5SameLanguage": 0.919,
+      "evidence5CrossLingual": 0.455,
+      "p50Ms": 10,
+      "p95Ms": 14.1,
+      "serverP50Ms": 8.4
+    }
+  },
+  "retrievalPerQuestion": [
+    {
+      "config": "fulltext",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-1",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-3",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-2",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-4",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-1",
+      "docRank": 7,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-2",
+      "docRank": 5,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-4",
+      "docRank": 9,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-2",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-4",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-4",
+      "docRank": 9,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-2",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-1",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-4",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "radar-2",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "radar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sql-2",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "sql-3",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "sql-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "stereo-2",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-2",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-4",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-1",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-2",
+      "docRank": 9,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-1",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-3",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-2",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-1",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-4",
+      "docRank": 4,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-2",
+      "docRank": 5,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-2",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-2",
+      "docRank": 7,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-1",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-2",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-4",
+      "docRank": 7,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-3",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-1",
+      "docRank": 4,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-4",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-4",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-2",
+      "docRank": 4,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-1",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-2",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-4",
+      "docRank": 1,
+      "evidence5": true
+    }
+  ],
+  "note": "Yalnızca arama ablasyonu (nomic-embed-text görev önekleri olmadan). Sohbet bölümü doğrulayıcı düzeltmesinden önce ölçüldüğü için çıkarıldı."
+}

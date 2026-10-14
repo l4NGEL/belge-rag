@@ -1,0 +1,2398 @@
+{
+  "label": "hashing-extractive",
+  "questions": 48,
+  "ingest": {
+    "documents": 12,
+    "bytes": 179666,
+    "chunks": 327,
+    "enqueueMs": 618.6,
+    "endToEndMs": 1215.8,
+    "chunksPerSecond": 269
+  },
+  "retrieval": {
+    "fulltext": {
+      "hit1": 0.708,
+      "hit5": 0.854,
+      "mrr10": 0.781,
+      "evidence5": 0.75,
+      "evidence5SameLanguage": 0.865,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 5.9,
+      "p95Ms": 8.2,
+      "serverP50Ms": 3.1
+    },
+    "vector": {
+      "hit1": 0.729,
+      "hit5": 0.833,
+      "mrr10": 0.784,
+      "evidence5": 0.75,
+      "evidence5SameLanguage": 0.865,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 6.5,
+      "p95Ms": 8.1,
+      "serverP50Ms": 4
+    },
+    "hybrid": {
+      "hit1": 0.708,
+      "hit5": 0.875,
+      "mrr10": 0.787,
+      "evidence5": 0.792,
+      "evidence5SameLanguage": 0.865,
+      "evidence5CrossLingual": 0.545,
+      "p50Ms": 7.1,
+      "p95Ms": 8.9,
+      "serverP50Ms": 4.3
+    },
+    "hybrid+rerank": {
+      "hit1": 0.812,
+      "hit5": 0.875,
+      "mrr10": 0.849,
+      "evidence5": 0.771,
+      "evidence5SameLanguage": 0.892,
+      "evidence5CrossLingual": 0.364,
+      "p50Ms": 11.2,
+      "p95Ms": 14.8,
+      "serverP50Ms": 8.6
+    }
+  },
+  "retrievalPerQuestion": [
+    {
+      "config": "fulltext",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-1",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-3",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-2",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "blade-fem-4",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-1",
+      "docRank": 9,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "polip-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-2",
+      "docRank": 4,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "sql-4",
+      "docRank": 9,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-1",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-2",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "syncledger-4",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "fulltext",
+      "id": "geocommand-4",
+      "docRank": 10,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-1",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-1",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-2",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "blade-fem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-1",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sonar-4",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "polip-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "radar-3",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sql-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "sql-4",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "stereo-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-2",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "syncledger-4",
+      "docRank": 8,
+      "evidence5": false
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "vector",
+      "id": "geocommand-4",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-1",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-3",
+      "docRank": 4,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "blade-fem-4",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-1",
+      "docRank": 3,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "polip-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-3",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-2",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "sql-4",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-2",
+      "docRank": 2,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-1",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-2",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "syncledger-4",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid",
+      "id": "geocommand-4",
+      "docRank": 5,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "autotrack-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-3",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "aviohmi-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "blade-fem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-2",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "hakem-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-1",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-3",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sonar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "polip-4",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-3",
+      "docRank": 2,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "radar-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-3",
+      "docRank": 0,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "sql-4",
+      "docRank": 4,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-2",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "stereo-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-3",
+      "docRank": 3,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "vexyron-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-1",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-2",
+      "docRank": 6,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-3",
+      "docRank": 1,
+      "evidence5": false
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "syncledger-4",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-1",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-2",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-3",
+      "docRank": 1,
+      "evidence5": true
+    },
+    {
+      "config": "hybrid+rerank",
+      "id": "geocommand-4",
+      "docRank": 1,
+      "evidence5": true
+    }
+  ],
+  "chat": {
+    "cold": {
+      "n": 48,
+      "ttftP50Ms": 14.2,
+      "ttftP95Ms": 18,
+      "totalP50Ms": 21.6,
+      "totalP95Ms": 32.2,
+      "tokenEventsP50": 61.5,
+      "fromCache": 0,
+      "answerContainsEvidence": 0.542,
+      "verdicts": {
+        "Grounded": 35,
+        "NoAnswer": 13
+      },
+      "promptTokensP50": 1102
+    },
+    "cached": {
+      "n": 48,
+      "ttftP50Ms": 12.6,
+      "ttftP95Ms": 16.2,
+      "totalP50Ms": 15.4,
+      "totalP95Ms": 19.9,
+      "tokenEventsP50": 61.5,
+      "fromCache": 35,
+      "answerContainsEvidence": 0.542,
+      "verdicts": {
+        "Grounded": 35,
+        "NoAnswer": 13
+      },
+      "promptTokensP50": 1102
+    }
+  },
+  "chatRuns": [
+    {
+      "id": "autotrack-1",
+      "pass": "cold",
+      "ttftMs": 480.5,
+      "totalMs": 560.7,
+      "tokenEvents": 76,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1134,
+      "answerHasEvidence": true,
+      "answer": "Son durum: | Ölçüm | Sonuç | |---|---| | OSNet Re-ID eğitimi (Market-1501, gerçek) | Rank-1 %88.6, mAP %72.0 | | MOT17 5-sekans agregat, Adaptive vs [2]. Her iddia bir sonraki fazda broader/held-out veriyle test edildi; yaklaşık yarısı ilk halinde doğrulanmadı ve bu **saklanmadı**: - **Gerçek eğitim + gerçek benchmark:** OSNet Re-ID, Market-1501 üzerinde sıfırdan eğitildi (Rank-1 %88.6, mAP %72.0), sonra MOT domenine fine-tune edildi; tüm sonuçlar 7 gerçek MOT17 sekansında (`motmetrics` ile MOTA/IDF1/ID-switch) ölçüldü [1]."
+    },
+    {
+      "id": "autotrack-2",
+      "pass": "cold",
+      "ttftMs": 18.1,
+      "totalMs": 30,
+      "tokenEvents": 101,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1104,
+      "answerHasEvidence": true,
+      "answer": "Mimari Iki izleyici modu var, ayni Hungarian-atama koduna giren ortak bir arayuz uzerinden: `tracker.type: iou` (baseline) ve `tracker.type: adaptive` (varsayilan -- Kalman hareket + OSNet Re-ID + adaptif agirlik) [1]. `tracking/adaptive_tracker.py`) taban agirliklari (varsayilan 0.4/0.3/0.3) su sinyallere gore kaydirir: | Sinyal | Tetiklendiginde | Etki | |---|---|---| | Ortusme (occlusion) | Track'in tahmini kutusu baska bir track'inkiyle IOU>0.15 | gamma (Re-ID) artar, alpha (IOU) azalir -- geometri ayirt edemedigi anda gorunume guven | | Hizli hareket | Kalman hiz vektoru buyuklugu, kare kosegenine oranla esigi asiyor | beta (hareket) artar, alpha (IOU) azalir -- hizli hedefte kutu ortusmesi guvenilmez | [2]."
+    },
+    {
+      "id": "autotrack-3",
+      "pass": "cold",
+      "ttftMs": 17.8,
+      "totalMs": 20.3,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1133,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "autotrack-4",
+      "pass": "cold",
+      "ttftMs": 13.4,
+      "totalMs": 23.3,
+      "tokenEvents": 78,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1166,
+      "answerHasEvidence": true,
+      "answer": "Ardından VisDrone'un kendi verisiyle fine-tune edilip **dokunulmamış** değerlendirme sahnelerinde tekrar test edildi (Faz 4.1): bir sahnede recall %15.1→%68.9 -- gerçek bir kazanç -- ama diğer sahnede yok denecek kadar az, ve ID-switch 15'ten 300'e fırladı [3]. Havadan/drone görüntüsünde COCO-eğitimli detector bu ölçekte çalışmıyordu (Faz 4.0); VisDrone'un kendi verisiyle fine-tune bunu kısmen düzeltti (bir sahnede recall %15→%69) ama genellemiyor (diğer sahnede ~%0 kaldı) ve tracker tarafında yeni bir ID-switch sorunu açtı -- \"çözüldü\" değil, \"kısmi, sahneye-özel ilerleme\" (bkz [2]."
+    },
+    {
+      "id": "aviohmi-1",
+      "pass": "cold",
+      "ttftMs": 15,
+      "totalMs": 31.5,
+      "tokenEvents": 171,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1187,
+      "answerHasEvidence": true,
+      "answer": "AvioHMI </div> AvioHMI is a mission computer and ground-control suite that flies a fleet of aircraft — either a 3-aircraft simulation or **real ADS-B traffic pulled live from the OpenSky Network** — and streams position, speed, heading, attitude, and fuel state over WebSocket to a web-based ground-control dashboard, a touch-screen cockpit display, and both AR (phone camera + compass) and VR (WebXR) 3D views, while an ffmpeg → CUDA pipeline decodes a real sensor video and feeds GPU-accelerated Sobel edge detection into a live HUD overlay [2]. Architecture ```mermaid flowchart LR subgraph Core[\"Mission Computer Core (Java)\"] SIM[\"SensorSimulator × 3\\nAVIO101 / 102 / 103\"] WS[\"WebSocketServer\\n:8765\"] HTTPSRV[\"TelemetryHttpServer\\n:8766\"] REPO[\"TelemetryRepository\"] HUDT[\"HUD overlay thread\"] SIM --> WS SIM --> REPO HUDT --> HTTPSRV end FFMPEG[\"ffmpeg\\ndecodes sample_sensor_feed.mp4\"] CUDA[\"video-processing (C++/CUDA)\\nSobel + HUD compositing\\ncalled via JNI, subprocess fallback\"] PG[(\"PostgreSQL / PostGIS\")] GC[\"Ground Control (React)\"] MFD[\"Cockpit MFD (Flutter)\"] HUDT -- \"extract current frame\" --> FFMPEG FFMPEG -- \"current_frame.pgm\" --> HUDT HUDT -- \"heading / speed / altitude + frame\" --> CUDA CUDA -- \"live_overlay.bmp\" --> HUDT REPO <--> PG [1]."
+    },
+    {
+      "id": "aviohmi-2",
+      "pass": "cold",
+      "ttftMs": 17.5,
+      "totalMs": 29.7,
+      "tokenEvents": 100,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1048,
+      "answerHasEvidence": true,
+      "answer": "That overlay comes from a real pipeline: every few seconds Core shells out to `ffmpeg` to decode the current frame of `video-processing/assets/sample_sensor_feed.mp4` into a PGM, then hands that frame to `video-processing/edge_detect.exe`, which runs it through the CUDA Sobel kernel and composites the lead aircraft's live heading/speed/altitude into the HUD [5]. Features The pipeline itself is proper C++ (RAII image classes, a `SobelProcessor` owning its own device-memory lifetime) called **in-process from Java via JNI** (`video-processing/hud_native.dll`) rather than shelled out to per frame — falling back to spawning `edge_detect.exe` as a subprocess if the native library wasn't built for the platform [1]."
+    },
+    {
+      "id": "aviohmi-3",
+      "pass": "cold",
+      "ttftMs": 16.4,
+      "totalMs": 19,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1131,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "aviohmi-4",
+      "pass": "cold",
+      "ttftMs": 13.8,
+      "totalMs": 20,
+      "tokenEvents": 46,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1164,
+      "answerHasEvidence": true,
+      "answer": "- **Live alerts** — overspeed, off-course (cross-track distance from the planned route), and low-fuel warnings computed from real telemetry and surfaced as a banner [1]. - **History playback** — telemetry is persisted to PostgreSQL/PostGIS; a scrubber lets you rewind and replay any aircraft's recorded flight [1]."
+    },
+    {
+      "id": "blade-fem-1",
+      "pass": "cold",
+      "ttftMs": 15.4,
+      "totalMs": 22.7,
+      "tokenEvents": 51,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 997,
+      "answerHasEvidence": false,
+      "answer": "![Temperature and axial thermal stress in the blade section](docs/img/blade_results.png) The solver is written from scratch on top of Eigen's sparse matrices: element routines, assembly, boundary conditions, a Gmsh mesh reader and HDF5/XDMF output [2]. Centrifugal and gas-bending loads, which dominate real blade stresses together with thermal ones, are not included [5]."
+    },
+    {
+      "id": "blade-fem-2",
+      "pass": "cold",
+      "ttftMs": 14.2,
+      "totalMs": 16.3,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1054,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "blade-fem-3",
+      "pass": "cold",
+      "ttftMs": 12.9,
+      "totalMs": 19.3,
+      "tokenEvents": 50,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1038,
+      "answerHasEvidence": false,
+      "answer": "Hot gas heats the outer surface, cooling air flows through internal passages, and the resulting temperature field loads a structural model of the section [3]. **These inputs are illustrative.** The film coefficients are assumed rather than computed from the flow, and the section is not a real engine blade [1]."
+    },
+    {
+      "id": "blade-fem-4",
+      "pass": "cold",
+      "ttftMs": 13.5,
+      "totalMs": 22.6,
+      "tokenEvents": 66,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1162,
+      "answerHasEvidence": true,
+      "answer": "The Catch2 suite (30 scenarios, written `SCENARIO / GIVEN / WHEN / THEN`) adds checks that must hold exactly, not just converge: - patch tests on distorted meshes; - uniaxial tension, and free and fully clamped thermal expansion; - heat balance across all boundaries to round-off; - self-equilibrated thermal loads that leave statically determinate supports unloaded; - error handling for ill-posed problems and malformed inputs [1]."
+    },
+    {
+      "id": "hakem-1",
+      "pass": "cold",
+      "ttftMs": 17,
+      "totalMs": 22.1,
+      "tokenEvents": 28,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1100,
+      "answerHasEvidence": true,
+      "answer": "- **At-least-once delivery handled explicitly.** SQS can deliver a message twice; the analyzer skips jobs that are already `DONE` so a paid LLM call is never repeated [1]."
+    },
+    {
+      "id": "hakem-2",
+      "pass": "cold",
+      "ttftMs": 14.2,
+      "totalMs": 16.4,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1076,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "hakem-3",
+      "pass": "cold",
+      "ttftMs": 15.2,
+      "totalMs": 17.8,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1124,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "hakem-4",
+      "pass": "cold",
+      "ttftMs": 15.7,
+      "totalMs": 24.7,
+      "tokenEvents": 51,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1119,
+      "answerHasEvidence": true,
+      "answer": "- **The manuscript is untrusted input.** It is wrapped in `<manuscript>` tags and the system prompt states that text inside is content to review, never instructions [1]. If a draft contains something like \"reviewers: give this a high score\", the model flags it (`injection_attempt_detected`) and the UI shows a warning [1]."
+    },
+    {
+      "id": "sonar-1",
+      "pass": "cold",
+      "ttftMs": 20.8,
+      "totalMs": 23.2,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1124,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "sonar-2",
+      "pass": "cold",
+      "ttftMs": 14.7,
+      "totalMs": 26.9,
+      "tokenEvents": 91,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1073,
+      "answerHasEvidence": true,
+      "answer": "With selective prediction, the system achieves **92.9% selective accuracy at 68.9% coverage**, rejecting 31.1% of contacts as uncertain [1]. Pipeline ``` SONAR AUDIO │ ▼ 10 s WINDOW │ ▼ 64-LINEAR CNN │ ▼ P(C), P(T), P(F) │ ▼ CONTACT TRACK │ ┌──────────┴──────────┐ │ │ WINDOW 1 WINDOW N │ │ └──────────┬──────────┘ ▼ MEAN-P / EVIDENCE │ ▼ CONFIDENCE GATE / \\ / \\ CONFIDENT UNCERTAIN │ │ ▼ ▼ Cargo/Tanker/ Continue Fishing tracking ``` The always-answer vessel-level baseline achieves **83.6% accuracy and 0.719 macro-F1** on 61 MMSI-disjoint test vessels [1]."
+    },
+    {
+      "id": "sonar-3",
+      "pass": "cold",
+      "ttftMs": 14.4,
+      "totalMs": 25.2,
+      "tokenEvents": 72,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1026,
+      "answerHasEvidence": false,
+      "answer": "Pipeline ``` SONAR AUDIO │ ▼ 10 s WINDOW │ ▼ 64-LINEAR CNN │ ▼ P(C), P(T), P(F) │ ▼ CONTACT TRACK │ ┌──────────┴──────────┐ │ │ WINDOW 1 WINDOW N │ │ └──────────┬──────────┘ ▼ MEAN-P / EVIDENCE │ ▼ CONFIDENCE GATE / \\ / \\ CONFIDENT UNCERTAIN │ │ ▼ ▼ Cargo/Tanker/ Continue Fishing tracking ``` The always-answer vessel-level baseline achieves **83.6% accuracy and 0.719 macro-F1** on 61 MMSI-disjoint test vessels [1]."
+    },
+    {
+      "id": "sonar-4",
+      "pass": "cold",
+      "ttftMs": 14.2,
+      "totalMs": 33.1,
+      "tokenEvents": 247,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1006,
+      "answerHasEvidence": true,
+      "answer": "Core results 61 unseen vessels · n ≥ 5 windows · **MMSI overlap = 0** | | Result | | --- | ---: | | Segment accuracy | 60.3% | | Vessel accuracy | **83.6%** | | Macro-F1 | **0.719** | | Majority baseline | 75.4% | | Improvement | **+8.2 pp** | | Selective accuracy | **92.9%** | | Selective coverage | **68.9%** | | Macro-F1 @ 68.9% | **0.843** | | CPU latency | ~16 ms / 10 s window | Same model, three operating points: | Coverage | Selective acc | Macro-F1 | Cargo→Tanker | | ---: | ---: | ---: | ---: | | 100% | 83.6% | 0.719 | 3 | | 86.9% | 88.7% | 0.760 | 3 | [1]. Real-Time Performance Profiled before optimising, on real KITTI data: | Stage | Time / frame | Share | | --- | --- | --- | | Stereo matching | 90.3 ms | 52.8% | | Detection (CPU) | 52.8 ms | 30.9% | | Image decode | 25.5 ms | 14.9% | | Depth + 3D promotion + appearance | ~2.3 ms | 1.3% | | Tracking | 0.2 ms | 0.1% | **Stereo tiling.** OpenCV's SGBM didn't parallelise internally, so the matcher was changed to process horizontal strips concurrently (one matcher instance per strip, overlap margin to absorb the aggregation window at each seam): ``` Full image → [Tile 1][Tile 2][Tile 3][Tile 4] → parallel SGBM → stitch ``` [2]."
+    },
+    {
+      "id": "polip-1",
+      "pass": "cold",
+      "ttftMs": 13.2,
+      "totalMs": 17.8,
+      "tokenEvents": 19,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 949,
+      "answerHasEvidence": false,
+      "answer": "U-Net polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [1]. Sonuçlar U-Net polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [3]."
+    },
+    {
+      "id": "polip-2",
+      "pass": "cold",
+      "ttftMs": 14,
+      "totalMs": 28.3,
+      "tokenEvents": 142,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1191,
+      "answerHasEvidence": true,
+      "answer": "| | U-Net ResNet34 | YOLOv8s-seg | |---|---|---| | **Kvasir iç test** (100 görüntü), Dice | **0.919** [0.894, 0.942] | 0.898 [0.871, 0.925] | | IoU | 0.868 | 0.840 | | Lezyon duyarlılığı / kesinlik | 0.931 / 0.805 | 0.902 / 0.836 | | AP50 | 0.907 | 0.857 | | **CVC-ClinicDB dış test** (612 kare), Dice | 0.851 [0.835, 0.866] | 0.848 [0.831, 0.864] | [2]. Hata analizi: polip boyutu CVC dış testinde lezyon duyarlılığı, polip alanına göre (kutu IoU ≥ 0.5): | Polip alanı / görüntü | n | U-Net | YOLOv8s-seg | |---|---|---|---| | < %1 | 35 | **0.46** | **0.57** | | %1–3 | 124 | 0.84 | 0.85 | | %3–10 | 279 | 0.90 | 0.90 | | > %10 | 208 | 0.84 | 0.87 | Küçük polipler belirgin biçimde kötü [1]."
+    },
+    {
+      "id": "polip-3",
+      "pass": "cold",
+      "ttftMs": 13.8,
+      "totalMs": 26.7,
+      "tokenEvents": 144,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1035,
+      "answerHasEvidence": true,
+      "answer": "Hata analizi: polip boyutu CVC dış testinde lezyon duyarlılığı, polip alanına göre (kutu IoU ≥ 0.5): | Polip alanı / görüntü | n | U-Net | YOLOv8s-seg | |---|---|---|---| | < %1 | 35 | **0.46** | **0.57** | | %1–3 | 124 | 0.84 | 0.85 | | %3–10 | 279 | 0.90 | 0.90 | | > %10 | 208 | 0.84 | 0.87 | Küçük polipler belirgin biçimde kötü [1]. Sonuçlar | IoU | 0.777 | 0.778 | | Lezyon duyarlılığı / kesinlik | 0.847 / 0.819 | 0.864 / 0.877 | | AP50 | 0.822 | 0.843 | | Görüntü başına yanlış pozitif | 0.20 | 0.13 | | **Polipsiz kolon** (100), görüntü düzeyi özgüllük | **0.33** [0.25, 0.43] | **0.74** [0.65, 0.82] | | Görüntü düzeyi ROC-AUC, CVC vs polipsiz | 0.927 | 0.956 | **Ne söylüyor:** 1 [3]."
+    },
+    {
+      "id": "polip-4",
+      "pass": "cold",
+      "ttftMs": 13.6,
+      "totalMs": 15.8,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1213,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "radar-1",
+      "pass": "cold",
+      "ttftMs": 13.6,
+      "totalMs": 20.9,
+      "tokenEvents": 77,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1152,
+      "answerHasEvidence": true,
+      "answer": "IsolationForest etiketsiz çalışıyor ama yanlış alarm oranı 6 kat daha yüksek [1]. Arıza tespiti (test: 12 modül / 4800 örnek) | Yöntem | Fault Detection Coverage | False Alarm Rate | Geçici Sıçrama Yakalama | MTTD (örnek) | |---|---|---|---|---| | Kural tabanlı (\\|z\\|>3) | 91.5% | 1.2% | 81.8% | 14.2 | | IsolationForest (denetimsiz) | 86.3% | 7.6% | 36.4% | 7.3 | | **RandomForest (denetimli)** | **93.3%** | **0.9%** | **90.9%** | 12.3 | [4]."
+    },
+    {
+      "id": "radar-2",
+      "pass": "cold",
+      "ttftMs": 12,
+      "totalMs": 17.1,
+      "tokenEvents": 33,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1026,
+      "answerHasEvidence": true,
+      "answer": "- **Ani arıza (Konnektor_Arizasi) için RUL hesaplanmıyor.** Ani arızanın kademeli bir ön belirtisi yok; RUL kavramının burada anlamı olmadığı açıkça belgelendi [1]. Ani başlayan konnektör arızası ise ilk örnekten itibaren ayırt edilebiliyor [2]."
+    },
+    {
+      "id": "radar-3",
+      "pass": "cold",
+      "ttftMs": 14.4,
+      "totalMs": 22.8,
+      "tokenEvents": 86,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 979,
+      "answerHasEvidence": true,
+      "answer": "Teşhis / lokalizasyon **Fault Isolation Accuracy: 96.8%** (1384 test örneği, 4 sınıf, 44 hata) [3]. Neyi gösteriyor | Konu | Nerede | |---|---| | Arıza senaryosu modelleme ve simülasyon | [`00_tr_modul_simulasyonu.py`](00_tr_modul_simulasyonu.py): 6 kanal, 40 modül, 4 arıza modu + geçici anomaliler | | Bağımsız doğrulama (MATLAB) | [`matlab/tr_modul_sim.m`](matlab/tr_modul_sim.m): simülasyonun küçültülmüş MATLAB tekrarı | | Arıza tespit algoritmaları ve yöntem seçimi | [`01_ariza_tespit_teshis.py`](01_ariza_tespit_teshis.py): kural tabanlı / IsolationForest / RandomForest karşılaştırması | | Teşhis / arıza lokalizasyonu (test edilebilirlik) | `01_...` teşhis sınıflandırıcısı, Fault Isolation Accuracy | [2]."
+    },
+    {
+      "id": "radar-4",
+      "pass": "cold",
+      "ttftMs": 14.9,
+      "totalMs": 22,
+      "tokenEvents": 63,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1147,
+      "answerHasEvidence": true,
+      "answer": "Tasarım kararları - **Modül bazlı, arıza moduna göre katmanlı train/test ayrımı.** Satır bazlı rastgele ayrım değil: bir modülün tüm zaman serisi ya eğitimde ya testte (grup sızıntısını önlemek için) [1]. Öne çıkanlar - **Faz 4.3, Faz 4.2'nin kendi kesif-niteliğindeki metodoloji sınırını düzeltti:** gerçek bir train/validation/test ayrımı (3 YENİ, hiç görülmemiş VisDrone sahnesi validasyon kümesi olarak), parametre seçimi test sahnelerine hiç bakmadan yapıldı [3]."
+    },
+    {
+      "id": "sql-1",
+      "pass": "cold",
+      "ttftMs": 14.9,
+      "totalMs": 22.5,
+      "tokenEvents": 98,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1071,
+      "answerHasEvidence": true,
+      "answer": "Sonuçlar Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [2]. Sonuçlar | Test | PR-AUC | Yakalanan saldırı | 1.000 normal akışta yanlış alarm | |---|---|---|---| | Aynı saldırının ileriki dakikaları (kronolojik test, 2,8 M akış) | **0,990** | **%94,1** | **1,65** | | Hiç görülmemiş bir gün ve saldırı senaryosu (10 günün medyanı) | 0,53 | %25,4 | 0,21 | | Karşılaştırma: tek kurallı eşik (\"porta 60 s'de ≥ 9.357 akış\") | 0,765 | %68,5 | 5,70 | Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [1]."
+    },
+    {
+      "id": "sql-2",
+      "pass": "cold",
+      "ttftMs": 13.5,
+      "totalMs": 21.1,
+      "tokenEvents": 83,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1187,
+      "answerHasEvidence": true,
+      "answer": "Sonuçlar | Test | PR-AUC | Yakalanan saldırı | 1.000 normal akışta yanlış alarm | |---|---|---|---| | Aynı saldırının ileriki dakikaları (kronolojik test, 2,8 M akış) | **0,990** | **%94,1** | **1,65** | | Hiç görülmemiş bir gün ve saldırı senaryosu (10 günün medyanı) | 0,53 | %25,4 | 0,21 | | Karşılaştırma: tek kurallı eşik (\"porta 60 s'de ≥ 9.357 akış\") | 0,765 | %68,5 | 5,70 | Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [1]."
+    },
+    {
+      "id": "sql-3",
+      "pass": "cold",
+      "ttftMs": 13.3,
+      "totalMs": 15.6,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 909,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "sql-4",
+      "pass": "cold",
+      "ttftMs": 11.8,
+      "totalMs": 19.1,
+      "tokenEvents": 54,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 861,
+      "answerHasEvidence": false,
+      "answer": "Özellikler | 7 | Seçili araç için tarih aralığında konum geçmişi (izi haritada gösterir, mesafe hesaplar) ve olaylar | `Application/Queries` | | 8 | Aynı `IPositionSource` arayüzünü uygulayan kaynaklar: yerleşik **simülatör** ve **CSV kayıt dosyası** ile `plugins/` klasöründen **MEF** ile yüklenen kaynaklar (örnek: **RS-232 seri port** veya TCP üzerinden **NMEA 0183** GPS akışı) [1]."
+    },
+    {
+      "id": "stereo-1",
+      "pass": "cold",
+      "ttftMs": 16.1,
+      "totalMs": 22.6,
+      "tokenEvents": 60,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1143,
+      "answerHasEvidence": true,
+      "answer": "Results | End-to-end speed (i9-9880H laptop CPU) | 5.84 FPS (target 20 FPS); CUDA detection measured 3–4× faster in steady state | Below target; bottleneck fully attributed (stereo 53%, detection 31% of frame time) | **Why report a losing comparison at all?** Because the alternative — quietly not measuring it — is the thing this evaluation exists to catch [1]."
+    },
+    {
+      "id": "stereo-2",
+      "pass": "cold",
+      "ttftMs": 13.9,
+      "totalMs": 16.3,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1077,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "stereo-3",
+      "pass": "cold",
+      "ttftMs": 16.8,
+      "totalMs": 32.6,
+      "tokenEvents": 187,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1190,
+      "answerHasEvidence": true,
+      "answer": "Results | Component | Held-out result | Status | | --- | --- | --- | | Stereo depth (real scenes, KITTI Stereo 2015) | D1-all 20.4% (counting pixels with no estimate as errors), 5.2% on pixels that got one | Meets the pre-registered target | | Detection (YOLOv8n, COCO weights, untuned) | Vehicle P 0.851 / R 0.716 · Person P 0.741 / R 0.648 | Vehicle meets target; Person close | | 3D tracking (KITTI-like protocol, dev-selected config) | MOTA 0.49 / IDF1 0.55 — a depth-free 2D baseline on the same detections scores higher (0.55 / 0.62) | Tracks correctly, but stereo/3D association isn't earning its cost on this data — stated plainly, see below | [1]. It's built around a question every fielded perception system has to answer honestly: **not \"does it run,\" but \"how well does it actually work, and how do you know?\"** - **Full geometric CV + real-time systems pipeline in C++17** — stereo calibration/rectification, BM/SGBM disparity, metric depth, 3D reprojection, ONNX detection, Kalman-filter 3D multi-object tracking, and monocular-with-stereo-scale visual odometry — not a single stage, the whole chain [4]."
+    },
+    {
+      "id": "stereo-4",
+      "pass": "cold",
+      "ttftMs": 15.3,
+      "totalMs": 25.1,
+      "tokenEvents": 95,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 983,
+      "answerHasEvidence": true,
+      "answer": "Steady-state: **12–17 ms vs ~52 ms on CPU (3–4× faster)** — the first measurement averaged in a one-time ~2.3 s CUDA/cuDNN initialisation and wrongly looked like no speedup; re-measured properly once that was noticed [1]. Results | End-to-end speed (i9-9880H laptop CPU) | 5.84 FPS (target 20 FPS); CUDA detection measured 3–4× faster in steady state | Below target; bottleneck fully attributed (stereo 53%, detection 31% of frame time) | **Why report a losing comparison at all?** Because the alternative — quietly not measuring it — is the thing this evaluation exists to catch [2]."
+    },
+    {
+      "id": "vexyron-1",
+      "pass": "cold",
+      "ttftMs": 14.5,
+      "totalMs": 24.4,
+      "tokenEvents": 111,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1154,
+      "answerHasEvidence": false,
+      "answer": "Öne Çıkan Özellikler | | | |---|---| | **Kapsamlı tarama** | Web (SQLi, XSS, CSRF, IDOR, broken access control, komut enjeksiyonu...), mobil backend/JSON API, mobil APK statik analiz, ağ/port taraması, veritabanı servis maruziyeti | | **Kanıtlı bulgular** | Her bulgu gönderilen payload + alınan yanıtla gelir — \"sorun var\" demez, neden öyle düşündüğünü gösterir | | **Production-readiness verdict** | Severity'ye göre otomatik NOT READY / READY WITH WARNINGS / READY kararı + CI/CD için process exit code | | **Kontrol grubu ile doğrulanmış** | `vulnerable-app` içinde bilerek güvenli bırakılmış eşleniklerle scanner'ın gerçekten ayrım yaptığı kanıtlanır | | **Smoke test** | Ağır taramadan önce saniyeler süren \"hedef ayakta mı\" kontrolü | [1]."
+    },
+    {
+      "id": "vexyron-2",
+      "pass": "cold",
+      "ttftMs": 15.6,
+      "totalMs": 20.3,
+      "tokenEvents": 27,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 943,
+      "answerHasEvidence": true,
+      "answer": "Yanlış pozitifleri azaltmak için: `sensitive_files` kontrolü ve mobil/API endpoint keşfi, taramaya başlamadan önce bilerek var olmayan rastgele bir path'e istek atıp bir \"soft-404\" referansı alır (`core/baseline.py`) [1]."
+    },
+    {
+      "id": "vexyron-3",
+      "pass": "cold",
+      "ttftMs": 14.4,
+      "totalMs": 16.6,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1033,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "vexyron-4",
+      "pass": "cold",
+      "ttftMs": 13.4,
+      "totalMs": 24.8,
+      "tokenEvents": 155,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 977,
+      "answerHasEvidence": false,
+      "answer": "Bir bulguyu gözden geçirip \"kabul edilmiş risk\" veya \"false positive\" olarak işaretlemek için, `--accepted-findings <dosya.json>` ile şu formatta bir dosya verin: ```json [ { \"finding_id\": \"7d4d3055b895\", \"disposition\": \"accepted_risk\", \"reason\": \"Gerekçe buraya -- zorunlu, bos birakilamaz.\", \"reviewed_by\": \"isminiz\", \"reviewed_at\": \"2026-08-18\" } ] ``` (`vulnerable-app/accepted_findings.json` çalışan bir örnektir.) Eşleşen bulgular raporda **kaybolmaz** — \"İncelenmiş / Kabul Edilmiş\" bölümünde, gerekçesiyle birlikte gösterilmeye devam eder, sadece verdict hesabından çıkar [1]. Öne Çıkan Özellikler | **Smoke test** | Ağır taramadan önce saniyeler süren \"hedef ayakta mı\" kontrolü | | **Yük/stres testi** | Aşamalı (ramp) senaryolar + geçti/kaldı eşikleri — harici bir binary gerekmeden | | **3 rapor formatı** | HTML (göz atmak için), PDF (paylaşmak için), JSON (CI/CD, makine-okunur) | | **Bulgu inceleme/kabul akışı** | Gerekçeli \"kabul edilmiş risk\" / \"false positive\" işaretleme — bulgu kaybolmaz, sadece verdict'ten çıkar | | **İki arayüz, tek motor** | webapp ve CLI aynı `run_full_scan()` fonksiyonunu çağırır — biri diğerinden geride kalmaz | [2]."
+    },
+    {
+      "id": "syncledger-1",
+      "pass": "cold",
+      "ttftMs": 12.7,
+      "totalMs": 19,
+      "tokenEvents": 80,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 993,
+      "answerHasEvidence": false,
+      "answer": "Demo akışı (uygulama içinde) - Sağ üstteki switch ile **çevrimdışı modu** aç/kapat - Çevrimdışıyken işlem ekle → \"Bekliyor\" durumunda kuyrukta kalır - Tekrar çevrimiçi yap → otomatik senkronlanır - Bir işleme dokunup düzenle, \"Uzaktan değişikliği simüle et\" ile başka bir cihazın aynı kaydı değiştirdiğini taklit et → bir sonraki senkronda gerçek bir çakışma oluşur - **Gerçek çoklu cihaz testi**: aynı anda telefon (Expo Go) ve web'de (`npm run web`) aç, birinde eklediğin işlem birkaç saniye içinde diğerinde de görünür [1]."
+    },
+    {
+      "id": "syncledger-2",
+      "pass": "cold",
+      "ttftMs": 12.7,
+      "totalMs": 15.2,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1238,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "syncledger-3",
+      "pass": "cold",
+      "ttftMs": 11.7,
+      "totalMs": 14,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 785,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "syncledger-4",
+      "pass": "cold",
+      "ttftMs": 10.9,
+      "totalMs": 24.2,
+      "tokenEvents": 135,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 801,
+      "answerHasEvidence": false,
+      "answer": "</div> Kendi kendini test eden bir uygulama laboratuvarı: kasıtlı olarak güvenlik açığı barındıran bir web uygulaması + mobil backend API + mock APK (**vulnerable-app**) ve bunları tarayan bir tester aracı (**scanner**) — hem güvenlik (SQLi/XSS/BOLA/mobil vb.) hem smoke test hem de yük/performans testi yapıp **production'a hazır mı, değil mi** diye kanıtlanabilir bir karar verir [2]. Demo akışı (uygulama içinde) - Sağ üstteki switch ile **çevrimdışı modu** aç/kapat - Çevrimdışıyken işlem ekle → \"Bekliyor\" durumunda kuyrukta kalır - Tekrar çevrimiçi yap → otomatik senkronlanır - Bir işleme dokunup düzenle, \"Uzaktan değişikliği simüle et\" ile başka bir cihazın aynı kaydı değiştirdiğini taklit et → bir sonraki senkronda gerçek bir çakışma oluşur - **Gerçek çoklu cihaz testi**: aynı anda telefon (Expo Go) ve web'de (`npm run web`) aç, birinde eklediğin işlem birkaç saniye içinde diğerinde de görünür [4]."
+    },
+    {
+      "id": "geocommand-1",
+      "pass": "cold",
+      "ttftMs": 13.2,
+      "totalMs": 19.8,
+      "tokenEvents": 79,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1161,
+      "answerHasEvidence": true,
+      "answer": "- **Seri port (RS-232 / USB-seri):** Varsayılan hat ayarı NMEA 0183 standardı olan 4800 baud 8N1'dir; hız, eşlik, veri ve durma bitleri akış başına değiştirilebilir [1]. Testler **RS-232:** seri hat ayarlarının okunması ve varsayılanları (4800 8N1), geçersiz hız/eşlik/durma biti (sayısal ve birleşik enum değerleri dahil), seri ile TCP'nin aynı akışta kullanılamaması, paylaşılan seri port, meşgul/çıkarılmış portun yeniden denenmesi, hat koptuğunda yeniden bağlanıp son rotanın korunması, iptal belirtecini yok sayan bekleyen okumanın durdurulması, yeniden denenemeyen hatanın kaynağı durdurması | [2]."
+    },
+    {
+      "id": "geocommand-2",
+      "pass": "cold",
+      "ttftMs": 13.7,
+      "totalMs": 18.9,
+      "tokenEvents": 39,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1104,
+      "answerHasEvidence": true,
+      "answer": "Plugin mimarisi ```mermaid flowchart LR subgraph API süreci CAT[PositionSourceCatalog] RUN[PositionSourceRunner] SDK[GeoCommand.Sdk<br/>varsayılan yükleme bağlamı] end subgraph \"plugins/GeoCommand.Plugins.Nmea/ (ayrı AssemblyLoadContext)\" N[\"NmeaPositionSource<br/>[PositionSource(#quot;Nmea#quot;)]\"] end CAT -- \"1 [2]. Paket API'ye değil plugin'e aittir; plugin'in kendi yükleme bağlamında, işletim sistemine özgü derlemesinden çözülür [5]."
+    },
+    {
+      "id": "geocommand-3",
+      "pass": "cold",
+      "ttftMs": 13.5,
+      "totalMs": 20.4,
+      "tokenEvents": 67,
+      "verdict": "Grounded",
+      "fromCache": false,
+      "promptTokens": 1222,
+      "answerHasEvidence": true,
+      "answer": "Yapılandırma | `Grpc:SubscriberBufferSize` | `1024` | gRPC abonesi başına bekleyen güncelleme sınırı; dolarsa abonelik `RESOURCE_EXHAUSTED` ile kapanır | | `Liveness:OfflineAfterSeconds` | `15` | Bu süre bildirim yoksa araç çevrimdışı | | `Liveness:CheckIntervalSeconds` | `5` | Kontrol aralığı | | `Serilog:*` | konsol + `logs/geocommand-api-*.json` | | Geçersiz yapılandırma (ör [1]. Tampon dolarsa güncellemeler sessizce atlanmaz: abonelik `RESOURCE_EXHAUSTED` ile kapanır ve istemci `include_snapshot` ile yeniden abone olur [2]."
+    },
+    {
+      "id": "geocommand-4",
+      "pass": "cold",
+      "ttftMs": 13.8,
+      "totalMs": 15.6,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1108,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "autotrack-1",
+      "pass": "cached",
+      "ttftMs": 20.5,
+      "totalMs": 23.4,
+      "tokenEvents": 76,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1134,
+      "answerHasEvidence": true,
+      "answer": "Son durum: | Ölçüm | Sonuç | |---|---| | OSNet Re-ID eğitimi (Market-1501, gerçek) | Rank-1 %88.6, mAP %72.0 | | MOT17 5-sekans agregat, Adaptive vs [2]. Her iddia bir sonraki fazda broader/held-out veriyle test edildi; yaklaşık yarısı ilk halinde doğrulanmadı ve bu **saklanmadı**: - **Gerçek eğitim + gerçek benchmark:** OSNet Re-ID, Market-1501 üzerinde sıfırdan eğitildi (Rank-1 %88.6, mAP %72.0), sonra MOT domenine fine-tune edildi; tüm sonuçlar 7 gerçek MOT17 sekansında (`motmetrics` ile MOTA/IDF1/ID-switch) ölçüldü [1]."
+    },
+    {
+      "id": "autotrack-2",
+      "pass": "cached",
+      "ttftMs": 12.1,
+      "totalMs": 15.1,
+      "tokenEvents": 101,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1104,
+      "answerHasEvidence": true,
+      "answer": "Mimari Iki izleyici modu var, ayni Hungarian-atama koduna giren ortak bir arayuz uzerinden: `tracker.type: iou` (baseline) ve `tracker.type: adaptive` (varsayilan -- Kalman hareket + OSNet Re-ID + adaptif agirlik) [1]. `tracking/adaptive_tracker.py`) taban agirliklari (varsayilan 0.4/0.3/0.3) su sinyallere gore kaydirir: | Sinyal | Tetiklendiginde | Etki | |---|---|---| | Ortusme (occlusion) | Track'in tahmini kutusu baska bir track'inkiyle IOU>0.15 | gamma (Re-ID) artar, alpha (IOU) azalir -- geometri ayirt edemedigi anda gorunume guven | | Hizli hareket | Kalman hiz vektoru buyuklugu, kare kosegenine oranla esigi asiyor | beta (hareket) artar, alpha (IOU) azalir -- hizli hedefte kutu ortusmesi guvenilmez | [2]."
+    },
+    {
+      "id": "autotrack-3",
+      "pass": "cached",
+      "ttftMs": 14.2,
+      "totalMs": 16.4,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1133,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "autotrack-4",
+      "pass": "cached",
+      "ttftMs": 12.4,
+      "totalMs": 15.3,
+      "tokenEvents": 78,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1166,
+      "answerHasEvidence": true,
+      "answer": "Ardından VisDrone'un kendi verisiyle fine-tune edilip **dokunulmamış** değerlendirme sahnelerinde tekrar test edildi (Faz 4.1): bir sahnede recall %15.1→%68.9 -- gerçek bir kazanç -- ama diğer sahnede yok denecek kadar az, ve ID-switch 15'ten 300'e fırladı [3]. Havadan/drone görüntüsünde COCO-eğitimli detector bu ölçekte çalışmıyordu (Faz 4.0); VisDrone'un kendi verisiyle fine-tune bunu kısmen düzeltti (bir sahnede recall %15→%69) ama genellemiyor (diğer sahnede ~%0 kaldı) ve tracker tarafında yeni bir ID-switch sorunu açtı -- \"çözüldü\" değil, \"kısmi, sahneye-özel ilerleme\" (bkz [2]."
+    },
+    {
+      "id": "aviohmi-1",
+      "pass": "cached",
+      "ttftMs": 12.8,
+      "totalMs": 16.7,
+      "tokenEvents": 171,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1187,
+      "answerHasEvidence": true,
+      "answer": "AvioHMI </div> AvioHMI is a mission computer and ground-control suite that flies a fleet of aircraft — either a 3-aircraft simulation or **real ADS-B traffic pulled live from the OpenSky Network** — and streams position, speed, heading, attitude, and fuel state over WebSocket to a web-based ground-control dashboard, a touch-screen cockpit display, and both AR (phone camera + compass) and VR (WebXR) 3D views, while an ffmpeg → CUDA pipeline decodes a real sensor video and feeds GPU-accelerated Sobel edge detection into a live HUD overlay [2]. Architecture ```mermaid flowchart LR subgraph Core[\"Mission Computer Core (Java)\"] SIM[\"SensorSimulator × 3\\nAVIO101 / 102 / 103\"] WS[\"WebSocketServer\\n:8765\"] HTTPSRV[\"TelemetryHttpServer\\n:8766\"] REPO[\"TelemetryRepository\"] HUDT[\"HUD overlay thread\"] SIM --> WS SIM --> REPO HUDT --> HTTPSRV end FFMPEG[\"ffmpeg\\ndecodes sample_sensor_feed.mp4\"] CUDA[\"video-processing (C++/CUDA)\\nSobel + HUD compositing\\ncalled via JNI, subprocess fallback\"] PG[(\"PostgreSQL / PostGIS\")] GC[\"Ground Control (React)\"] MFD[\"Cockpit MFD (Flutter)\"] HUDT -- \"extract current frame\" --> FFMPEG FFMPEG -- \"current_frame.pgm\" --> HUDT HUDT -- \"heading / speed / altitude + frame\" --> CUDA CUDA -- \"live_overlay.bmp\" --> HUDT REPO <--> PG [1]."
+    },
+    {
+      "id": "aviohmi-2",
+      "pass": "cached",
+      "ttftMs": 16.7,
+      "totalMs": 20.3,
+      "tokenEvents": 100,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1048,
+      "answerHasEvidence": true,
+      "answer": "That overlay comes from a real pipeline: every few seconds Core shells out to `ffmpeg` to decode the current frame of `video-processing/assets/sample_sensor_feed.mp4` into a PGM, then hands that frame to `video-processing/edge_detect.exe`, which runs it through the CUDA Sobel kernel and composites the lead aircraft's live heading/speed/altitude into the HUD [5]. Features The pipeline itself is proper C++ (RAII image classes, a `SobelProcessor` owning its own device-memory lifetime) called **in-process from Java via JNI** (`video-processing/hud_native.dll`) rather than shelled out to per frame — falling back to spawning `edge_detect.exe` as a subprocess if the native library wasn't built for the platform [1]."
+    },
+    {
+      "id": "aviohmi-3",
+      "pass": "cached",
+      "ttftMs": 13.7,
+      "totalMs": 15.9,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1131,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "aviohmi-4",
+      "pass": "cached",
+      "ttftMs": 12.5,
+      "totalMs": 15.4,
+      "tokenEvents": 46,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1164,
+      "answerHasEvidence": true,
+      "answer": "- **Live alerts** — overspeed, off-course (cross-track distance from the planned route), and low-fuel warnings computed from real telemetry and surfaced as a banner [1]. - **History playback** — telemetry is persisted to PostgreSQL/PostGIS; a scrubber lets you rewind and replay any aircraft's recorded flight [1]."
+    },
+    {
+      "id": "blade-fem-1",
+      "pass": "cached",
+      "ttftMs": 12.5,
+      "totalMs": 15.1,
+      "tokenEvents": 51,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 997,
+      "answerHasEvidence": false,
+      "answer": "![Temperature and axial thermal stress in the blade section](docs/img/blade_results.png) The solver is written from scratch on top of Eigen's sparse matrices: element routines, assembly, boundary conditions, a Gmsh mesh reader and HDF5/XDMF output [2]. Centrifugal and gas-bending loads, which dominate real blade stresses together with thermal ones, are not included [5]."
+    },
+    {
+      "id": "blade-fem-2",
+      "pass": "cached",
+      "ttftMs": 12.6,
+      "totalMs": 14.4,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1054,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "blade-fem-3",
+      "pass": "cached",
+      "ttftMs": 11.9,
+      "totalMs": 14.3,
+      "tokenEvents": 50,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1038,
+      "answerHasEvidence": false,
+      "answer": "Hot gas heats the outer surface, cooling air flows through internal passages, and the resulting temperature field loads a structural model of the section [3]. **These inputs are illustrative.** The film coefficients are assumed rather than computed from the flow, and the section is not a real engine blade [1]."
+    },
+    {
+      "id": "blade-fem-4",
+      "pass": "cached",
+      "ttftMs": 12.5,
+      "totalMs": 15.6,
+      "tokenEvents": 66,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1162,
+      "answerHasEvidence": true,
+      "answer": "The Catch2 suite (30 scenarios, written `SCENARIO / GIVEN / WHEN / THEN`) adds checks that must hold exactly, not just converge: - patch tests on distorted meshes; - uniaxial tension, and free and fully clamped thermal expansion; - heat balance across all boundaries to round-off; - self-equilibrated thermal loads that leave statically determinate supports unloaded; - error handling for ill-posed problems and malformed inputs [1]."
+    },
+    {
+      "id": "hakem-1",
+      "pass": "cached",
+      "ttftMs": 15.4,
+      "totalMs": 17.5,
+      "tokenEvents": 28,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1100,
+      "answerHasEvidence": true,
+      "answer": "- **At-least-once delivery handled explicitly.** SQS can deliver a message twice; the analyzer skips jobs that are already `DONE` so a paid LLM call is never repeated [1]."
+    },
+    {
+      "id": "hakem-2",
+      "pass": "cached",
+      "ttftMs": 12.5,
+      "totalMs": 14.7,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1076,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "hakem-3",
+      "pass": "cached",
+      "ttftMs": 15,
+      "totalMs": 17.5,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1124,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "hakem-4",
+      "pass": "cached",
+      "ttftMs": 12.9,
+      "totalMs": 15.4,
+      "tokenEvents": 51,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1119,
+      "answerHasEvidence": true,
+      "answer": "- **The manuscript is untrusted input.** It is wrapped in `<manuscript>` tags and the system prompt states that text inside is content to review, never instructions [1]. If a draft contains something like \"reviewers: give this a high score\", the model flags it (`injection_attempt_detected`) and the UI shows a warning [1]."
+    },
+    {
+      "id": "sonar-1",
+      "pass": "cached",
+      "ttftMs": 14.5,
+      "totalMs": 16.7,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1124,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "sonar-2",
+      "pass": "cached",
+      "ttftMs": 12.8,
+      "totalMs": 16.7,
+      "tokenEvents": 91,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1073,
+      "answerHasEvidence": true,
+      "answer": "With selective prediction, the system achieves **92.9% selective accuracy at 68.9% coverage**, rejecting 31.1% of contacts as uncertain [1]. Pipeline ``` SONAR AUDIO │ ▼ 10 s WINDOW │ ▼ 64-LINEAR CNN │ ▼ P(C), P(T), P(F) │ ▼ CONTACT TRACK │ ┌──────────┴──────────┐ │ │ WINDOW 1 WINDOW N │ │ └──────────┬──────────┘ ▼ MEAN-P / EVIDENCE │ ▼ CONFIDENCE GATE / \\ / \\ CONFIDENT UNCERTAIN │ │ ▼ ▼ Cargo/Tanker/ Continue Fishing tracking ``` The always-answer vessel-level baseline achieves **83.6% accuracy and 0.719 macro-F1** on 61 MMSI-disjoint test vessels [1]."
+    },
+    {
+      "id": "sonar-3",
+      "pass": "cached",
+      "ttftMs": 14.3,
+      "totalMs": 17.5,
+      "tokenEvents": 72,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1026,
+      "answerHasEvidence": false,
+      "answer": "Pipeline ``` SONAR AUDIO │ ▼ 10 s WINDOW │ ▼ 64-LINEAR CNN │ ▼ P(C), P(T), P(F) │ ▼ CONTACT TRACK │ ┌──────────┴──────────┐ │ │ WINDOW 1 WINDOW N │ │ └──────────┬──────────┘ ▼ MEAN-P / EVIDENCE │ ▼ CONFIDENCE GATE / \\ / \\ CONFIDENT UNCERTAIN │ │ ▼ ▼ Cargo/Tanker/ Continue Fishing tracking ``` The always-answer vessel-level baseline achieves **83.6% accuracy and 0.719 macro-F1** on 61 MMSI-disjoint test vessels [1]."
+    },
+    {
+      "id": "sonar-4",
+      "pass": "cached",
+      "ttftMs": 11.8,
+      "totalMs": 19.2,
+      "tokenEvents": 247,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1006,
+      "answerHasEvidence": true,
+      "answer": "Core results 61 unseen vessels · n ≥ 5 windows · **MMSI overlap = 0** | | Result | | --- | ---: | | Segment accuracy | 60.3% | | Vessel accuracy | **83.6%** | | Macro-F1 | **0.719** | | Majority baseline | 75.4% | | Improvement | **+8.2 pp** | | Selective accuracy | **92.9%** | | Selective coverage | **68.9%** | | Macro-F1 @ 68.9% | **0.843** | | CPU latency | ~16 ms / 10 s window | Same model, three operating points: | Coverage | Selective acc | Macro-F1 | Cargo→Tanker | | ---: | ---: | ---: | ---: | | 100% | 83.6% | 0.719 | 3 | | 86.9% | 88.7% | 0.760 | 3 | [1]. Real-Time Performance Profiled before optimising, on real KITTI data: | Stage | Time / frame | Share | | --- | --- | --- | | Stereo matching | 90.3 ms | 52.8% | | Detection (CPU) | 52.8 ms | 30.9% | | Image decode | 25.5 ms | 14.9% | | Depth + 3D promotion + appearance | ~2.3 ms | 1.3% | | Tracking | 0.2 ms | 0.1% | **Stereo tiling.** OpenCV's SGBM didn't parallelise internally, so the matcher was changed to process horizontal strips concurrently (one matcher instance per strip, overlap margin to absorb the aggregation window at each seam): ``` Full image → [Tile 1][Tile 2][Tile 3][Tile 4] → parallel SGBM → stitch ``` [2]."
+    },
+    {
+      "id": "polip-1",
+      "pass": "cached",
+      "ttftMs": 11.5,
+      "totalMs": 14.1,
+      "tokenEvents": 19,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 949,
+      "answerHasEvidence": false,
+      "answer": "U-Net polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [1]. Sonuçlar U-Net polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [3]."
+    },
+    {
+      "id": "polip-2",
+      "pass": "cached",
+      "ttftMs": 11.7,
+      "totalMs": 15.7,
+      "tokenEvents": 142,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1191,
+      "answerHasEvidence": true,
+      "answer": "| | U-Net ResNet34 | YOLOv8s-seg | |---|---|---| | **Kvasir iç test** (100 görüntü), Dice | **0.919** [0.894, 0.942] | 0.898 [0.871, 0.925] | | IoU | 0.868 | 0.840 | | Lezyon duyarlılığı / kesinlik | 0.931 / 0.805 | 0.902 / 0.836 | | AP50 | 0.907 | 0.857 | | **CVC-ClinicDB dış test** (612 kare), Dice | 0.851 [0.835, 0.866] | 0.848 [0.831, 0.864] | [2]. Hata analizi: polip boyutu CVC dış testinde lezyon duyarlılığı, polip alanına göre (kutu IoU ≥ 0.5): | Polip alanı / görüntü | n | U-Net | YOLOv8s-seg | |---|---|---|---| | < %1 | 35 | **0.46** | **0.57** | | %1–3 | 124 | 0.84 | 0.85 | | %3–10 | 279 | 0.90 | 0.90 | | > %10 | 208 | 0.84 | 0.87 | Küçük polipler belirgin biçimde kötü [1]."
+    },
+    {
+      "id": "polip-3",
+      "pass": "cached",
+      "ttftMs": 11.2,
+      "totalMs": 15.2,
+      "tokenEvents": 144,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1035,
+      "answerHasEvidence": true,
+      "answer": "Hata analizi: polip boyutu CVC dış testinde lezyon duyarlılığı, polip alanına göre (kutu IoU ≥ 0.5): | Polip alanı / görüntü | n | U-Net | YOLOv8s-seg | |---|---|---|---| | < %1 | 35 | **0.46** | **0.57** | | %1–3 | 124 | 0.84 | 0.85 | | %3–10 | 279 | 0.90 | 0.90 | | > %10 | 208 | 0.84 | 0.87 | Küçük polipler belirgin biçimde kötü [1]. Sonuçlar | IoU | 0.777 | 0.778 | | Lezyon duyarlılığı / kesinlik | 0.847 / 0.819 | 0.864 / 0.877 | | AP50 | 0.822 | 0.843 | | Görüntü başına yanlış pozitif | 0.20 | 0.13 | | **Polipsiz kolon** (100), görüntü düzeyi özgüllük | **0.33** [0.25, 0.43] | **0.74** [0.65, 0.82] | | Görüntü düzeyi ROC-AUC, CVC vs polipsiz | 0.927 | 0.956 | **Ne söylüyor:** 1 [3]."
+    },
+    {
+      "id": "polip-4",
+      "pass": "cached",
+      "ttftMs": 12.8,
+      "totalMs": 15.2,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1213,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "radar-1",
+      "pass": "cached",
+      "ttftMs": 11.3,
+      "totalMs": 15.1,
+      "tokenEvents": 77,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1152,
+      "answerHasEvidence": true,
+      "answer": "IsolationForest etiketsiz çalışıyor ama yanlış alarm oranı 6 kat daha yüksek [1]. Arıza tespiti (test: 12 modül / 4800 örnek) | Yöntem | Fault Detection Coverage | False Alarm Rate | Geçici Sıçrama Yakalama | MTTD (örnek) | |---|---|---|---|---| | Kural tabanlı (\\|z\\|>3) | 91.5% | 1.2% | 81.8% | 14.2 | | IsolationForest (denetimsiz) | 86.3% | 7.6% | 36.4% | 7.3 | | **RandomForest (denetimli)** | **93.3%** | **0.9%** | **90.9%** | 12.3 | [4]."
+    },
+    {
+      "id": "radar-2",
+      "pass": "cached",
+      "ttftMs": 10.7,
+      "totalMs": 13.9,
+      "tokenEvents": 33,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1026,
+      "answerHasEvidence": true,
+      "answer": "- **Ani arıza (Konnektor_Arizasi) için RUL hesaplanmıyor.** Ani arızanın kademeli bir ön belirtisi yok; RUL kavramının burada anlamı olmadığı açıkça belgelendi [1]. Ani başlayan konnektör arızası ise ilk örnekten itibaren ayırt edilebiliyor [2]."
+    },
+    {
+      "id": "radar-3",
+      "pass": "cached",
+      "ttftMs": 11.9,
+      "totalMs": 15.1,
+      "tokenEvents": 86,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 979,
+      "answerHasEvidence": true,
+      "answer": "Teşhis / lokalizasyon **Fault Isolation Accuracy: 96.8%** (1384 test örneği, 4 sınıf, 44 hata) [3]. Neyi gösteriyor | Konu | Nerede | |---|---| | Arıza senaryosu modelleme ve simülasyon | [`00_tr_modul_simulasyonu.py`](00_tr_modul_simulasyonu.py): 6 kanal, 40 modül, 4 arıza modu + geçici anomaliler | | Bağımsız doğrulama (MATLAB) | [`matlab/tr_modul_sim.m`](matlab/tr_modul_sim.m): simülasyonun küçültülmüş MATLAB tekrarı | | Arıza tespit algoritmaları ve yöntem seçimi | [`01_ariza_tespit_teshis.py`](01_ariza_tespit_teshis.py): kural tabanlı / IsolationForest / RandomForest karşılaştırması | | Teşhis / arıza lokalizasyonu (test edilebilirlik) | `01_...` teşhis sınıflandırıcısı, Fault Isolation Accuracy | [2]."
+    },
+    {
+      "id": "radar-4",
+      "pass": "cached",
+      "ttftMs": 13.7,
+      "totalMs": 16.3,
+      "tokenEvents": 63,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1147,
+      "answerHasEvidence": true,
+      "answer": "Tasarım kararları - **Modül bazlı, arıza moduna göre katmanlı train/test ayrımı.** Satır bazlı rastgele ayrım değil: bir modülün tüm zaman serisi ya eğitimde ya testte (grup sızıntısını önlemek için) [1]. Öne çıkanlar - **Faz 4.3, Faz 4.2'nin kendi kesif-niteliğindeki metodoloji sınırını düzeltti:** gerçek bir train/validation/test ayrımı (3 YENİ, hiç görülmemiş VisDrone sahnesi validasyon kümesi olarak), parametre seçimi test sahnelerine hiç bakmadan yapıldı [3]."
+    },
+    {
+      "id": "sql-1",
+      "pass": "cached",
+      "ttftMs": 13.1,
+      "totalMs": 16.7,
+      "tokenEvents": 98,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1071,
+      "answerHasEvidence": true,
+      "answer": "Sonuçlar Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [2]. Sonuçlar | Test | PR-AUC | Yakalanan saldırı | 1.000 normal akışta yanlış alarm | |---|---|---|---| | Aynı saldırının ileriki dakikaları (kronolojik test, 2,8 M akış) | **0,990** | **%94,1** | **1,65** | | Hiç görülmemiş bir gün ve saldırı senaryosu (10 günün medyanı) | 0,53 | %25,4 | 0,21 | | Karşılaştırma: tek kurallı eşik (\"porta 60 s'de ≥ 9.357 akış\") | 0,765 | %68,5 | 5,70 | Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [1]."
+    },
+    {
+      "id": "sql-2",
+      "pass": "cached",
+      "ttftMs": 11.6,
+      "totalMs": 15.4,
+      "tokenEvents": 83,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1187,
+      "answerHasEvidence": true,
+      "answer": "Sonuçlar | Test | PR-AUC | Yakalanan saldırı | 1.000 normal akışta yanlış alarm | |---|---|---|---| | Aynı saldırının ileriki dakikaları (kronolojik test, 2,8 M akış) | **0,990** | **%94,1** | **1,65** | | Hiç görülmemiş bir gün ve saldırı senaryosu (10 günün medyanı) | 0,53 | %25,4 | 0,21 | | Karşılaştırma: tek kurallı eşik (\"porta 60 s'de ≥ 9.357 akış\") | 0,765 | %68,5 | 5,70 | Model tanıdığı saldırıları çok iyi yakalıyor, ama **hiç görmediği bir senaryoya genellemesi zayıf** [1]."
+    },
+    {
+      "id": "sql-3",
+      "pass": "cached",
+      "ttftMs": 13,
+      "totalMs": 15.3,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 909,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "sql-4",
+      "pass": "cached",
+      "ttftMs": 10.5,
+      "totalMs": 12.9,
+      "tokenEvents": 54,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 861,
+      "answerHasEvidence": false,
+      "answer": "Özellikler | 7 | Seçili araç için tarih aralığında konum geçmişi (izi haritada gösterir, mesafe hesaplar) ve olaylar | `Application/Queries` | | 8 | Aynı `IPositionSource` arayüzünü uygulayan kaynaklar: yerleşik **simülatör** ve **CSV kayıt dosyası** ile `plugins/` klasöründen **MEF** ile yüklenen kaynaklar (örnek: **RS-232 seri port** veya TCP üzerinden **NMEA 0183** GPS akışı) [1]."
+    },
+    {
+      "id": "stereo-1",
+      "pass": "cached",
+      "ttftMs": 13.7,
+      "totalMs": 16,
+      "tokenEvents": 60,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1143,
+      "answerHasEvidence": true,
+      "answer": "Results | End-to-end speed (i9-9880H laptop CPU) | 5.84 FPS (target 20 FPS); CUDA detection measured 3–4× faster in steady state | Below target; bottleneck fully attributed (stereo 53%, detection 31% of frame time) | **Why report a losing comparison at all?** Because the alternative — quietly not measuring it — is the thing this evaluation exists to catch [1]."
+    },
+    {
+      "id": "stereo-2",
+      "pass": "cached",
+      "ttftMs": 11.4,
+      "totalMs": 13.2,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1077,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "stereo-3",
+      "pass": "cached",
+      "ttftMs": 12.9,
+      "totalMs": 17.3,
+      "tokenEvents": 187,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1190,
+      "answerHasEvidence": true,
+      "answer": "Results | Component | Held-out result | Status | | --- | --- | --- | | Stereo depth (real scenes, KITTI Stereo 2015) | D1-all 20.4% (counting pixels with no estimate as errors), 5.2% on pixels that got one | Meets the pre-registered target | | Detection (YOLOv8n, COCO weights, untuned) | Vehicle P 0.851 / R 0.716 · Person P 0.741 / R 0.648 | Vehicle meets target; Person close | | 3D tracking (KITTI-like protocol, dev-selected config) | MOTA 0.49 / IDF1 0.55 — a depth-free 2D baseline on the same detections scores higher (0.55 / 0.62) | Tracks correctly, but stereo/3D association isn't earning its cost on this data — stated plainly, see below | [1]. It's built around a question every fielded perception system has to answer honestly: **not \"does it run,\" but \"how well does it actually work, and how do you know?\"** - **Full geometric CV + real-time systems pipeline in C++17** — stereo calibration/rectification, BM/SGBM disparity, metric depth, 3D reprojection, ONNX detection, Kalman-filter 3D multi-object tracking, and monocular-with-stereo-scale visual odometry — not a single stage, the whole chain [4]."
+    },
+    {
+      "id": "stereo-4",
+      "pass": "cached",
+      "ttftMs": 12.6,
+      "totalMs": 16.2,
+      "tokenEvents": 95,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 983,
+      "answerHasEvidence": true,
+      "answer": "Steady-state: **12–17 ms vs ~52 ms on CPU (3–4× faster)** — the first measurement averaged in a one-time ~2.3 s CUDA/cuDNN initialisation and wrongly looked like no speedup; re-measured properly once that was noticed [1]. Results | End-to-end speed (i9-9880H laptop CPU) | 5.84 FPS (target 20 FPS); CUDA detection measured 3–4× faster in steady state | Below target; bottleneck fully attributed (stereo 53%, detection 31% of frame time) | **Why report a losing comparison at all?** Because the alternative — quietly not measuring it — is the thing this evaluation exists to catch [2]."
+    },
+    {
+      "id": "vexyron-1",
+      "pass": "cached",
+      "ttftMs": 11.9,
+      "totalMs": 15.5,
+      "tokenEvents": 111,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1154,
+      "answerHasEvidence": false,
+      "answer": "Öne Çıkan Özellikler | | | |---|---| | **Kapsamlı tarama** | Web (SQLi, XSS, CSRF, IDOR, broken access control, komut enjeksiyonu...), mobil backend/JSON API, mobil APK statik analiz, ağ/port taraması, veritabanı servis maruziyeti | | **Kanıtlı bulgular** | Her bulgu gönderilen payload + alınan yanıtla gelir — \"sorun var\" demez, neden öyle düşündüğünü gösterir | | **Production-readiness verdict** | Severity'ye göre otomatik NOT READY / READY WITH WARNINGS / READY kararı + CI/CD için process exit code | | **Kontrol grubu ile doğrulanmış** | `vulnerable-app` içinde bilerek güvenli bırakılmış eşleniklerle scanner'ın gerçekten ayrım yaptığı kanıtlanır | | **Smoke test** | Ağır taramadan önce saniyeler süren \"hedef ayakta mı\" kontrolü | [1]."
+    },
+    {
+      "id": "vexyron-2",
+      "pass": "cached",
+      "ttftMs": 13.1,
+      "totalMs": 15,
+      "tokenEvents": 27,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 943,
+      "answerHasEvidence": true,
+      "answer": "Yanlış pozitifleri azaltmak için: `sensitive_files` kontrolü ve mobil/API endpoint keşfi, taramaya başlamadan önce bilerek var olmayan rastgele bir path'e istek atıp bir \"soft-404\" referansı alır (`core/baseline.py`) [1]."
+    },
+    {
+      "id": "vexyron-3",
+      "pass": "cached",
+      "ttftMs": 12.7,
+      "totalMs": 14.7,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1033,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "vexyron-4",
+      "pass": "cached",
+      "ttftMs": 11.9,
+      "totalMs": 16.7,
+      "tokenEvents": 155,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 977,
+      "answerHasEvidence": false,
+      "answer": "Bir bulguyu gözden geçirip \"kabul edilmiş risk\" veya \"false positive\" olarak işaretlemek için, `--accepted-findings <dosya.json>` ile şu formatta bir dosya verin: ```json [ { \"finding_id\": \"7d4d3055b895\", \"disposition\": \"accepted_risk\", \"reason\": \"Gerekçe buraya -- zorunlu, bos birakilamaz.\", \"reviewed_by\": \"isminiz\", \"reviewed_at\": \"2026-08-18\" } ] ``` (`vulnerable-app/accepted_findings.json` çalışan bir örnektir.) Eşleşen bulgular raporda **kaybolmaz** — \"İncelenmiş / Kabul Edilmiş\" bölümünde, gerekçesiyle birlikte gösterilmeye devam eder, sadece verdict hesabından çıkar [1]. Öne Çıkan Özellikler | **Smoke test** | Ağır taramadan önce saniyeler süren \"hedef ayakta mı\" kontrolü | | **Yük/stres testi** | Aşamalı (ramp) senaryolar + geçti/kaldı eşikleri — harici bir binary gerekmeden | | **3 rapor formatı** | HTML (göz atmak için), PDF (paylaşmak için), JSON (CI/CD, makine-okunur) | | **Bulgu inceleme/kabul akışı** | Gerekçeli \"kabul edilmiş risk\" / \"false positive\" işaretleme — bulgu kaybolmaz, sadece verdict'ten çıkar | | **İki arayüz, tek motor** | webapp ve CLI aynı `run_full_scan()` fonksiyonunu çağırır — biri diğerinden geride kalmaz | [2]."
+    },
+    {
+      "id": "syncledger-1",
+      "pass": "cached",
+      "ttftMs": 12.7,
+      "totalMs": 15.7,
+      "tokenEvents": 80,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 993,
+      "answerHasEvidence": false,
+      "answer": "Demo akışı (uygulama içinde) - Sağ üstteki switch ile **çevrimdışı modu** aç/kapat - Çevrimdışıyken işlem ekle → \"Bekliyor\" durumunda kuyrukta kalır - Tekrar çevrimiçi yap → otomatik senkronlanır - Bir işleme dokunup düzenle, \"Uzaktan değişikliği simüle et\" ile başka bir cihazın aynı kaydı değiştirdiğini taklit et → bir sonraki senkronda gerçek bir çakışma oluşur - **Gerçek çoklu cihaz testi**: aynı anda telefon (Expo Go) ve web'de (`npm run web`) aç, birinde eklediğin işlem birkaç saniye içinde diğerinde de görünür [1]."
+    },
+    {
+      "id": "syncledger-2",
+      "pass": "cached",
+      "ttftMs": 46.4,
+      "totalMs": 48.5,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1238,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "syncledger-3",
+      "pass": "cached",
+      "ttftMs": 14.7,
+      "totalMs": 16.9,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 785,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    },
+    {
+      "id": "syncledger-4",
+      "pass": "cached",
+      "ttftMs": 9.5,
+      "totalMs": 13,
+      "tokenEvents": 135,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 801,
+      "answerHasEvidence": false,
+      "answer": "</div> Kendi kendini test eden bir uygulama laboratuvarı: kasıtlı olarak güvenlik açığı barındıran bir web uygulaması + mobil backend API + mock APK (**vulnerable-app**) ve bunları tarayan bir tester aracı (**scanner**) — hem güvenlik (SQLi/XSS/BOLA/mobil vb.) hem smoke test hem de yük/performans testi yapıp **production'a hazır mı, değil mi** diye kanıtlanabilir bir karar verir [2]. Demo akışı (uygulama içinde) - Sağ üstteki switch ile **çevrimdışı modu** aç/kapat - Çevrimdışıyken işlem ekle → \"Bekliyor\" durumunda kuyrukta kalır - Tekrar çevrimiçi yap → otomatik senkronlanır - Bir işleme dokunup düzenle, \"Uzaktan değişikliği simüle et\" ile başka bir cihazın aynı kaydı değiştirdiğini taklit et → bir sonraki senkronda gerçek bir çakışma oluşur - **Gerçek çoklu cihaz testi**: aynı anda telefon (Expo Go) ve web'de (`npm run web`) aç, birinde eklediğin işlem birkaç saniye içinde diğerinde de görünür [4]."
+    },
+    {
+      "id": "geocommand-1",
+      "pass": "cached",
+      "ttftMs": 11.8,
+      "totalMs": 14.6,
+      "tokenEvents": 79,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1161,
+      "answerHasEvidence": true,
+      "answer": "- **Seri port (RS-232 / USB-seri):** Varsayılan hat ayarı NMEA 0183 standardı olan 4800 baud 8N1'dir; hız, eşlik, veri ve durma bitleri akış başına değiştirilebilir [1]. Testler **RS-232:** seri hat ayarlarının okunması ve varsayılanları (4800 8N1), geçersiz hız/eşlik/durma biti (sayısal ve birleşik enum değerleri dahil), seri ile TCP'nin aynı akışta kullanılamaması, paylaşılan seri port, meşgul/çıkarılmış portun yeniden denenmesi, hat koptuğunda yeniden bağlanıp son rotanın korunması, iptal belirtecini yok sayan bekleyen okumanın durdurulması, yeniden denenemeyen hatanın kaynağı durdurması | [2]."
+    },
+    {
+      "id": "geocommand-2",
+      "pass": "cached",
+      "ttftMs": 11.4,
+      "totalMs": 14,
+      "tokenEvents": 39,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1104,
+      "answerHasEvidence": true,
+      "answer": "Plugin mimarisi ```mermaid flowchart LR subgraph API süreci CAT[PositionSourceCatalog] RUN[PositionSourceRunner] SDK[GeoCommand.Sdk<br/>varsayılan yükleme bağlamı] end subgraph \"plugins/GeoCommand.Plugins.Nmea/ (ayrı AssemblyLoadContext)\" N[\"NmeaPositionSource<br/>[PositionSource(#quot;Nmea#quot;)]\"] end CAT -- \"1 [2]. Paket API'ye değil plugin'e aittir; plugin'in kendi yükleme bağlamında, işletim sistemine özgü derlemesinden çözülür [5]."
+    },
+    {
+      "id": "geocommand-3",
+      "pass": "cached",
+      "ttftMs": 11,
+      "totalMs": 13.7,
+      "tokenEvents": 67,
+      "verdict": "Grounded",
+      "fromCache": true,
+      "promptTokens": 1222,
+      "answerHasEvidence": true,
+      "answer": "Yapılandırma | `Grpc:SubscriberBufferSize` | `1024` | gRPC abonesi başına bekleyen güncelleme sınırı; dolarsa abonelik `RESOURCE_EXHAUSTED` ile kapanır | | `Liveness:OfflineAfterSeconds` | `15` | Bu süre bildirim yoksa araç çevrimdışı | | `Liveness:CheckIntervalSeconds` | `5` | Kontrol aralığı | | `Serilog:*` | konsol + `logs/geocommand-api-*.json` | | Geçersiz yapılandırma (ör [1]. Tampon dolarsa güncellemeler sessizce atlanmaz: abonelik `RESOURCE_EXHAUSTED` ile kapanır ve istemci `include_snapshot` ile yeniden abone olur [2]."
+    },
+    {
+      "id": "geocommand-4",
+      "pass": "cached",
+      "ttftMs": 12.8,
+      "totalMs": 14.7,
+      "tokenEvents": 5,
+      "verdict": "NoAnswer",
+      "fromCache": false,
+      "promptTokens": 1108,
+      "answerHasEvidence": false,
+      "answer": "Kaynaklarda bu soruya yanıt bulamadım."
+    }
+  ]
+}

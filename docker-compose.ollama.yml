@@ -1,0 +1,17 @@
+# Ana makinedeki Ollama ile üretken mod:
+#   ollama pull gemma3:4b && ollama pull nomic-embed-text
+#   docker compose down -v   # embedding boyutu değiştiği için (384 → 768) şema sıfırlanmalı
+#   docker compose -f docker-compose.yml -f docker-compose.ollama.yml up --build
+x-ollama-env: &ollama-env
+  Llm__Provider: Ollama
+  Embeddings__Provider: Ollama
+  Embeddings__Dimensions: "768"
+  # nomic-embed-text asimetrik aramada görev önekleri bekler (model kartı).
+  Embeddings__QueryPrefix: "search_query: "
+  Embeddings__DocumentPrefix: "search_document: "
+
+services:
+  api:
+    environment: *ollama-env
+  worker:
+    environment: *ollama-env

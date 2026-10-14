@@ -1,0 +1,109 @@
+Alım: 12 belge, 175 KB, 327 parça, kuyruğa yazma 608 ms, indekslenme dahil toplam 5575 ms
+
+| Yapılandırma | Belge Hit@1 | Belge Hit@5 | MRR@10 | Kanıt@5 (tümü) | Kanıt@5 (aynı dil) | Kanıt@5 (çapraz dil) | p50 ms | p95 ms |
+|---|---|---|---|---|---|---|---|---|
+| fulltext | %70,8 | %87,5 | 0,790 | %75,0 | %86,5 | %36,4 | 4,3 | 6,6 |
+| vector | %72,9 | %81,2 | 0,779 | %70,8 | %81,1 | %36,4 | 28,9 | 34,7 |
+| hybrid | %75,0 | %89,6 | 0,812 | %75,0 | %86,5 | %36,4 | 5,6 | 7,7 |
+| hybrid+rerank | %81,2 | %93,8 | 0,865 | %81,2 | %91,9 | %45,5 | 11,0 | 14,4 |
+[cold] autotrack-1: Grounded ttft=1809ms  OSNet Re-ID modeli Market-1501 üzerinde Rank-1 %88.6'ya ulaştı [1].
+[cold] autotrack-2: Grounded ttft=876ms  Adaptif izleyicide varsayılan taban ağırlıklar 0.4/0.3/0.3'tür [2].
+[cold] autotrack-3: Ungrounded ttft=422ms  Track güveni aşağıdaki eşiklerle kararlı, belirsiz ve kayıp adayı kovalarına ayrılıyor: *   **Kararlı:** >=0.75 *   **Belirsiz:** 0.5-0.75 *…
+[cold] autotrack-4: Ungrounded ttft=448ms  Bir sahnede recall %15,1'den %68,9'a yükseldi [1].
+[cold] aviohmi-1: Grounded ttft=917ms  The mission computer's WebSocket server listens on port 8765 [3].
+[cold] aviohmi-2: Grounded ttft=913ms  The Java core calls the CUDA edge-detection code in-process via a JNI bridge [1, 3].
+[cold] aviohmi-3: Grounded ttft=848ms  Core 3 saniye içinde bağlantı kuramazsa, Ground Control yeniden bağlanır ve eşitlenir [3].
+[cold] aviohmi-4: Grounded ttft=952ms  Overspeed, off-course (cross-track distance from the planned route), and low-fuel warnings [1].
+[cold] blade-fem-1: Grounded ttft=819ms  Plane stress sets σzz = 0 and misses the axial thermal stress that wants the hot surface to grow longer than the cool core [1].
+[cold] blade-fem-2: Ungrounded ttft=382ms  Delikli Kirsch plakasında en ince ağda gerilme yığılma faktörü 2.997 olarak bulundu [1].
+[cold] blade-fem-3: Grounded ttft=836ms  The cooling passages are assumed to have a film coefficient of 2000 W/m²K and a gas temperature of 800 K [4, 5].
+[cold] blade-fem-4: Grounded ttft=749ms  Catch2 test suite'inde 30 senaryo bulunmaktadır [1].
+[cold] hakem-1: Grounded ttft=837ms  The analyzer skips jobs that are already `DONE` so a paid LLM call is never repeated [1].
+[cold] hakem-2: Grounded ttft=859ms  Raporlar Redis'te önbelleğe alınır [1].
+[cold] hakem-3: Grounded ttft=875ms  Turkish lower-casing turned "Introduction" into "ıntroduction" [1].
+[cold] hakem-4: Grounded ttft=869ms  The system flags drafts containing instructions like "reviewers: give this a high score" (`[1]`). It detects an injection attempt and displa…
+[cold] sonar-1: NoAnswer ttft=802ms  Pasif sonar modelinde tek bir 10 saniyelik pencerenin doğruluğu hakkında doğrudan bir bilgi bulunmamaktadır [4].
+[cold] sonar-2: Grounded ttft=880ms  Selective accuracy is 92.9% and selective coverage is 68.9% [2].
+[cold] sonar-3: Grounded ttft=841ms  According to source [4], a contact can be declared confident after “wait” means fewer than five windows. The system waits for 10s — Cargo 94…
+[cold] sonar-4: Ungrounded ttft=833ms  According to source [1], the CPU latency is approximately 16 ms per 10 s window. [1]
+[cold] polip-1: Grounded ttft=2190ms  U-Net, polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [1, 3]. Bu, modellerin eğitimde hiç polipsiz görüntü görmediği ve "burada po…
+[cold] polip-2: Grounded ttft=1278ms  CVC-ClinicDB dış testinde U-Net'in Dice skoru 0.851 [0.835, 0.866]'dır. [1]
+[cold] polip-3: Grounded ttft=887ms  Kvasir iç testinde %1'in altında polip yok, yani bu zayıflık iç testte görünmüyordu [1].
+[cold] polip-4: NoAnswer ttft=1046ms  Bu kaynaklarda verilen bilgilere göre, bu soruya cevap bulunmuyor. [1], [2], [3], [4] ve [5] kaynakları, stereo derinlik çekimi, nesne takib…
+[cold] radar-1: Grounded ttft=932ms  RandomForest'ın yanlış alarm oranı %0,9'dur [4].
+[cold] radar-2: Grounded ttft=894ms  Ani arızanın kademeli bir ön belirtisi olmadığı için RUL kavramının burada anlamı olmadığı açıkça belgelendi [1].
+[cold] radar-3: Grounded ttft=912ms  Teşhis sınıflandırıcısı, 96,8% hata izolasyon doğruluğu elde eder [3].
+[cold] radar-4: Partial ttft=903ms  Kaynak [1], eğitim ve test verilerinin satır bazlı ayrılmasının, bir modülün tüm zaman serisinin ya eğitimde ya testte kalmasını sağladığını…
+[cold] sql-1: Grounded ttft=837ms  Model, hiç görmediği bir gün ve saldırı senaryosunda %25,4'ü [2] yakalıyor.
+[cold] sql-2: Grounded ttft=908ms  Tek kurallı port eşiği yönteminin PR-AUC değeri %68,5'tir [1].
+[cold] sql-3: Grounded ttft=844ms  According to source [4], the Mahalanobis 3D method using Chi-square gating in 3D has worse performance than 2D IoU at current depth accuracy…
+[cold] sql-4: Grounded ttft=842ms  Kaynak [2] ve [3]’te belirtildiği gibi, aynı `IPositionSource` arayüzünü uygulayan kaynaklar: yerleşik **simülatör** ve **CSV kayıt dosyası*…
+[cold] stereo-1: Grounded ttft=876ms  The stereo pipeline reaches a frame rate of 5.84 FPS on the laptop CPU [1].
+[cold] stereo-2: NoAnswer ttft=920ms  Kaynak [4] ve [5]'te stereo eşleştirmede görüntülerin kaç şeride bölünerek paralelleştirildiğiyle ilgili doğrudan bir bilgi bulunmamaktadır.…
+[cold] stereo-3: Grounded ttft=938ms  Stereo depth (real scenes, KITTI Stereo 2015) D1-all 20.4% (counting pixels with no estimate as errors) [1]
+[cold] stereo-4: Grounded ttft=789ms  CUDA detection is 3–4 times faster than CPU in steady state [1].
+[cold] vexyron-1: Grounded ttft=856ms  [1, 3] Tarayıcı, en az bir kritik veya yüksek önemde bir bulgu olduğunda NOT READY FOR PRODUCTION kararı veriyor.
+[cold] vexyron-2: Grounded ttft=793ms  Tek sayfa uygulamalarda yanlış pozitifleri azaltmak için kullanılan referans yanıt, taramaya başlamadan önce bilerek var olmayan rastgele bi…
+[cold] vexyron-3: Grounded ttft=804ms  The scanner detected 22 deliberately planted vulnerabilities [3].
+[cold] vexyron-4: Grounded ttft=788ms  Gerekçesi boş bırakılmış bir kabul edilmiş bulgu kaydı, sessizce yok sayılır [3]. Bu, bulgunun verdict'i NOT READY'de tutacağı anlamına geli…
+[cold] syncledger-1: Grounded ttft=766ms  Çakışma, bir işlemin "Bekliyor" durumunda kuyrukta kalması ve tekrar çevrimiçi yapıldığında otomatik senkronizasyonla gerçek bir çakışma olu…
+[cold] syncledger-2: Partial ttft=735ms  Kaynak [4]'e bakın. Kaynak [4], `--login-json`, `--login-username-field`, `--login-extra`, `--second-username`, `--second-password` ve `--ac…
+[cold] syncledger-3: Grounded ttft=746ms  Değişiklikler, offline'de Firestore'a push yönü kullanılarak gönderilir. Bu, `src/sync/syncEngine.ts` dosyasındaki outbox pattern'i ve FIFO …
+[cold] syncledger-4: Grounded ttft=712ms  Uygulamada 17 Jest testi var [1].
+[cold] geocommand-1: Grounded ttft=948ms  NMEA seri port akışının varsayılan hat ayarı 4800 baud 8N1'dir [1].
+[cold] geocommand-2: Ungrounded ttft=876ms  Plugin'ler, ayrı bir yükleme bağlamında çalıştırılıyor çünkü bu, MEF (Manifest Exchange Framework) ile keşfedilmelerini ve yüklenmelerini sa…
+[cold] geocommand-3: Grounded ttft=938ms  Bir gRPC abonesi, bekleyen güncelleme tamponu dolarsa, abonelik `RESOURCE_EXHAUSTED` ile kapanır [1].
+[cold] geocommand-4: Grounded ttft=990ms  Satır okuyucu (`NmeaLineReader`) satır uzunluğunu sınırlar [1]. Zaman damgası alıcının UTC saatidir ve kesirli saniye `decimal` ile ayrıştır…
+[cached] autotrack-1: Grounded ttft=15ms  OSNet Re-ID modeli Market-1501 üzerinde Rank-1 %88.6'ya ulaştı [1].
+[cached] autotrack-2: Grounded ttft=9ms  Adaptif izleyicide varsayılan taban ağırlıklar 0.4/0.3/0.3'tür [2].
+[cached] autotrack-3: Ungrounded ttft=901ms  Track güveni, aşağıdaki eşiklerle kararlı, belirsiz ve kayıp adayı kovalarına ayrılıyor: *   **Kararlı:** >= 0.75 *   **Belirsiz:** 0.5-0.75…
+[cached] autotrack-4: Ungrounded ttft=893ms  Bir sahnede recall %15,1'den %68,9'a yükseldi [1].
+[cached] aviohmi-1: Grounded ttft=14ms  The mission computer's WebSocket server listens on port 8765 [3].
+[cached] aviohmi-2: Grounded ttft=16ms  The Java core calls the CUDA edge-detection code in-process via a JNI bridge [1, 3].
+[cached] aviohmi-3: Grounded ttft=14ms  Core 3 saniye içinde bağlantı kuramazsa, Ground Control yeniden bağlanır ve eşitlenir [3].
+[cached] aviohmi-4: Grounded ttft=11ms  Overspeed, off-course (cross-track distance from the planned route), and low-fuel warnings [1].
+[cached] blade-fem-1: Grounded ttft=11ms  Plane stress sets σzz = 0 and misses the axial thermal stress that wants the hot surface to grow longer than the cool core [1].
+[cached] blade-fem-2: Ungrounded ttft=903ms  Delikli Kirsch plakasında en ince ağda gerilme yığılma faktörü 2.997 olarak bulundu [1].
+[cached] blade-fem-3: Grounded ttft=10ms  The cooling passages are assumed to have a film coefficient of 2000 W/m²K and a gas temperature of 800 K [4, 5].
+[cached] blade-fem-4: Grounded ttft=9ms  Catch2 test suite'inde 30 senaryo bulunmaktadır [1].
+[cached] hakem-1: Grounded ttft=13ms  The analyzer skips jobs that are already `DONE` so a paid LLM call is never repeated [1].
+[cached] hakem-2: Grounded ttft=10ms  Raporlar Redis'te önbelleğe alınır [1].
+[cached] hakem-3: Grounded ttft=10ms  Turkish lower-casing turned "Introduction" into "ıntroduction" [1].
+[cached] hakem-4: Grounded ttft=9ms  The system flags drafts containing instructions like "reviewers: give this a high score" (`[1]`). It detects an injection attempt and displa…
+[cached] sonar-1: NoAnswer ttft=610ms  Pasif sonar modelinde tek bir 10 saniyelik pencerenin doğruluğu hakkında doğrudan bir bilgi bulunmamaktadır [4].
+[cached] sonar-2: Grounded ttft=10ms  Selective accuracy is 92.9% and selective coverage is 68.9% [2].
+[cached] sonar-3: Grounded ttft=10ms  According to source [4], a contact can be declared confident after “wait” means fewer than five windows. The system waits for 10s — Cargo 94…
+[cached] sonar-4: Ungrounded ttft=807ms  According to source [1], the CPU latency is approximately 16 ms per 10 s window. [1]
+[cached] polip-1: Grounded ttft=9ms  U-Net, polipsiz görüntülerin üçte ikisinde yanlış alarm veriyor [1, 3]. Bu, modellerin eğitimde hiç polipsiz görüntü görmediği ve "burada po…
+[cached] polip-2: Grounded ttft=10ms  CVC-ClinicDB dış testinde U-Net'in Dice skoru 0.851 [0.835, 0.866]'dır. [1]
+[cached] polip-3: Grounded ttft=9ms  Kvasir iç testinde %1'in altında polip yok, yani bu zayıflık iç testte görünmüyordu [1].
+[cached] polip-4: Ungrounded ttft=1031ms  Bu kaynaklarda verilen bilgilere göre, specular yansımaların kaçırılan poliplere neden olduğu belirtilmemiştir [1, 2, 3, 4, 5].
+[cached] radar-1: Grounded ttft=9ms  RandomForest'ın yanlış alarm oranı %0,9'dur [4].
+[cached] radar-2: Grounded ttft=8ms  Ani arızanın kademeli bir ön belirtisi olmadığı için RUL kavramının burada anlamı olmadığı açıkça belgelendi [1].
+[cached] radar-3: Grounded ttft=9ms  Teşhis sınıflandırıcısı, 96,8% hata izolasyon doğruluğu elde eder [3].
+[cached] radar-4: Partial ttft=10ms  Kaynak [1], eğitim ve test verilerinin satır bazlı ayrılmasının, bir modülün tüm zaman serisinin ya eğitimde ya testte kalmasını sağladığını…
+[cached] sql-1: Grounded ttft=10ms  Model, hiç görmediği bir gün ve saldırı senaryosunda %25,4'ü [2] yakalıyor.
+[cached] sql-2: Grounded ttft=9ms  Tek kurallı port eşiği yönteminin PR-AUC değeri %68,5'tir [1].
+[cached] sql-3: Grounded ttft=9ms  According to source [4], the Mahalanobis 3D method using Chi-square gating in 3D has worse performance than 2D IoU at current depth accuracy…
+[cached] sql-4: Grounded ttft=8ms  Kaynak [2] ve [3]’te belirtildiği gibi, aynı `IPositionSource` arayüzünü uygulayan kaynaklar: yerleşik **simülatör** ve **CSV kayıt dosyası*…
+[cached] stereo-1: Grounded ttft=10ms  The stereo pipeline reaches a frame rate of 5.84 FPS on the laptop CPU [1].
+[cached] stereo-2: NoAnswer ttft=344ms  Kaynak [4] ve [5]'te, stereo eşleştirmede görüntülerin kaç şeride bölünerek paralelleştirildiğine dair doğrudan bir bilgi bulunmamaktadır. A…
+[cached] stereo-3: Grounded ttft=11ms  Stereo depth (real scenes, KITTI Stereo 2015) D1-all 20.4% (counting pixels with no estimate as errors) [1]
+[cached] stereo-4: Grounded ttft=9ms  CUDA detection is 3–4 times faster than CPU in steady state [1].
+[cached] vexyron-1: Grounded ttft=8ms  [1, 3] Tarayıcı, en az bir kritik veya yüksek önemde bir bulgu olduğunda NOT READY FOR PRODUCTION kararı veriyor.
+[cached] vexyron-2: Grounded ttft=9ms  Tek sayfa uygulamalarda yanlış pozitifleri azaltmak için kullanılan referans yanıt, taramaya başlamadan önce bilerek var olmayan rastgele bi…
+[cached] vexyron-3: Grounded ttft=9ms  The scanner detected 22 deliberately planted vulnerabilities [3].
+[cached] vexyron-4: Grounded ttft=9ms  Gerekçesi boş bırakılmış bir kabul edilmiş bulgu kaydı, sessizce yok sayılır [3]. Bu, bulgunun verdict'i NOT READY'de tutacağı anlamına geli…
+[cached] syncledger-1: Grounded ttft=9ms  Çakışma, bir işlemin "Bekliyor" durumunda kuyrukta kalması ve tekrar çevrimiçi yapıldığında otomatik senkronizasyonla gerçek bir çakışma olu…
+[cached] syncledger-2: Partial ttft=8ms  Kaynak [4]'e bakın. Kaynak [4], `--login-json`, `--login-username-field`, `--login-extra`, `--second-username`, `--second-password` ve `--ac…
+[cached] syncledger-3: Grounded ttft=9ms  Değişiklikler, offline'de Firestore'a push yönü kullanılarak gönderilir. Bu, `src/sync/syncEngine.ts` dosyasındaki outbox pattern'i ve FIFO …
+[cached] syncledger-4: Grounded ttft=9ms  Uygulamada 17 Jest testi var [1].
+[cached] geocommand-1: Grounded ttft=9ms  NMEA seri port akışının varsayılan hat ayarı 4800 baud 8N1'dir [1].
+[cached] geocommand-2: Ungrounded ttft=357ms  Plugin'ler, ayrı bir yükleme bağlamında çalıştırılıyor çünkü bu, MEF (Manifestasyon ve Çarpım için Çerçeve) ile keşfedilmelerini ve yüklenme…
+[cached] geocommand-3: Grounded ttft=9ms  Bir gRPC abonesi, bekleyen güncelleme tamponu dolarsa, abonelik `RESOURCE_EXHAUSTED` ile kapanır [1].
+[cached] geocommand-4: Grounded ttft=9ms  Satır okuyucu (`NmeaLineReader`) satır uzunluğunu sınırlar [1]. Zaman damgası alıcının UTC saatidir ve kesirli saniye `decimal` ile ayrıştır…
+
+Sohbet (48 soru): ilk token p50 863.8 ms / p95 1197 ms, toplam p50 1437.1 ms; önbellekli tekrar: ilk token p50 9.5 ms, 40/48 önbellekten
+Yanıtta kanıt ifadesi: 21/48; doğrulayıcı: Grounded 38, NoAnswer 3, Partial 2, Ungrounded 5
+
+→ eval\results\ollama-nomic-prefix-gemma3.json

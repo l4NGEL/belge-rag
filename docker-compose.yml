@@ -1,0 +1,110 @@
+name: belge-rag
+
+x-dotnet-env: &dotnet-env
+  Postgres__ConnectionString: Host=postgres;Port=5432;Database=belgerag;Username=belgerag;Password=belgerag
+  Redis__Configuration: redis:6379
+  Mongo__ConnectionString: mongodb://mongo:27017
+  RabbitMq__Uri: amqp://belgerag:belgerag@rabbitmq:5672/
+  # Varsayılan: modelsiz çalışır. Ollama için: docker compose -f docker-compose.yml -f docker-compose.ollama.yml up
+  Llm__Provider: ${LLM_PROVIDER:-Extractive}
+  Llm__ChatModel: ${LLM_CHAT_MODEL:-gemma3:4b}
+  Llm__Endpoint: ${LLM_ENDPOINT:-http://host.docker.internal:11434/v1}
+  Llm__ApiKey: ${LLM_API_KEY:-}
+  Embeddings__Provider: ${EMBEDDINGS_PROVIDER:-Hashing}
+  Embeddings__Model: ${EMBEDDINGS_MODEL:-nomic-embed-text}
+  Embeddings__Endpoint: ${EMBEDDINGS_ENDPOINT:-http://host.docker.internal:11434/v1}
+  Embeddings__Dimensions: ${EMBEDDINGS_DIMENSIONS:-384}
+  TokenBudget__ContextWindowTokens: ${CONTEXT_WINDOW_TOKENS:-4096}
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: belgerag
+      POSTGRES_USER: belgerag
+      POSTGRES_PASSWORD: belgerag
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U belgerag -d belgerag"]
+      interval: 3s
+      retries: 20
+
+  redis:
+    image: redis:8-alpine
+    command: ["redis-server", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      retries: 20
+
+  mongo:
+    image: mongo:7.0
+    volumes: [mongodata:/data/db]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      retries: 20
+
+  rabbitmq:
+    image: rabbitmq:4.1-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: belgerag
+      RABBITMQ_DEFAULT_PASS: belgerag
+    ports: ["15672:15672"]
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      retries: 30
+
+  api:
+    build: { context: ., target: api }
+    image: belge-rag-api
+    environment:
+      <<: *dotnet-env
+      ASPNETCORE_ENVIRONMENT: Production
+      Swagger__Enabled: "true"
+      RateLimit__ChatPerMinute: ${CHAT_RATE_LIMIT_PER_MINUTE:-30}
+      Auth__SigningKey: ${JWT_SIGNING_KEY:-compose-demo-signing-key-change-me-0123456789}
+      Auth__Users__0__Username: admin
+      Auth__Users__0__Password: ${ADMIN_PASSWORD:-admin-demo}
+      Auth__Users__0__Role: admin
+      Auth__Users__1__Username: demo
+      Auth__Users__1__Password: ${DEMO_PASSWORD:-demo-demo}
+      Auth__Users__1__Role: user
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["8081:8080"]
+    healthcheck:
+      # aspnet imajında curl yok; bash'in /dev/tcp'si ile /health çağrılır.
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8080 && printf 'GET /health HTTP/1.0\\r\\nHost: localhost\\r\\n\\r\\n' >&3 && grep -q '\"status\":\"Healthy\"' <&3"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      mongo: { condition: service_healthy }
+      rabbitmq: { condition: service_healthy }
+
+  worker:
+    build: { context: ., target: worker }
+    image: belge-rag-worker
+    environment:
+      <<: *dotnet-env
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      mongo: { condition: service_healthy }
+      rabbitmq: { condition: service_healthy }
+
+  web:
+    build: ./web
+    image: belge-rag-web
+    ports: ["8080:80"]
+    depends_on:
+      api: { condition: service_healthy }
+
+volumes:
+  pgdata:
+  mongodata:

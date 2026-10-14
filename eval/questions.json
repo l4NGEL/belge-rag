@@ -1,0 +1,61 @@
+[
+  { "id": "autotrack-1", "doc": "autotrack", "crossLingual": false, "question": "OSNet Re-ID modeli Market-1501 üzerinde hangi Rank-1 doğruluğuna ulaştı?", "evidence": ["Rank-1 %88.6"] },
+  { "id": "autotrack-2", "doc": "autotrack", "crossLingual": false, "question": "Adaptif izleyicide IOU, hareket ve Re-ID skorlarının varsayılan taban ağırlıkları nedir?", "evidence": ["0.4/0.3/0.3"] },
+  { "id": "autotrack-3", "doc": "autotrack", "crossLingual": false, "question": "Track güveni hangi eşiklerle kararlı, belirsiz ve kayıp adayı kovalarına ayrılıyor?", "evidence": ["lost_candidate"] },
+  { "id": "autotrack-4", "doc": "autotrack", "crossLingual": false, "question": "VisDrone verisiyle ince ayardan sonra bir sahnede recall ne kadar yükseldi?", "evidence": ["%15.1→%68.9"] },
+
+  { "id": "aviohmi-1", "doc": "aviohmi", "crossLingual": false, "question": "Which port does the mission computer's WebSocket server listen on?", "evidence": ["8765"] },
+  { "id": "aviohmi-2", "doc": "aviohmi", "crossLingual": false, "question": "How does the Java core call the CUDA edge-detection code without spawning a process for every frame?", "evidence": ["in-process from Java via JNI"] },
+  { "id": "aviohmi-3", "doc": "aviohmi", "crossLingual": true, "question": "Yer kontrol paneli Core'a 3 saniye içinde bağlanamazsa ne yapar?", "evidence": ["falls back to a local"] },
+  { "id": "aviohmi-4", "doc": "aviohmi", "crossLingual": false, "question": "Which warnings are raised from the live telemetry of an aircraft?", "evidence": ["overspeed, off-course"] },
+
+  { "id": "blade-fem-1", "doc": "blade-fem", "crossLingual": false, "question": "Why is plane stress unsuitable for the axial thermal stress in a turbine blade?", "evidence": ["Plane stress sets σzz = 0"] },
+  { "id": "blade-fem-2", "doc": "blade-fem", "crossLingual": true, "question": "Delikli Kirsch plakasında en ince ağda gerilme yığılma faktörü kaç bulundu?", "evidence": ["2.997"] },
+  { "id": "blade-fem-3", "doc": "blade-fem", "crossLingual": false, "question": "What film coefficient and gas temperature are assumed inside the cooling passages?", "evidence": ["Cooling passages | 2000 | 800"] },
+  { "id": "blade-fem-4", "doc": "blade-fem", "crossLingual": false, "question": "How many scenarios are in the Catch2 test suite?", "evidence": ["30 scenarios"] },
+
+  { "id": "hakem-1", "doc": "hakem", "crossLingual": false, "question": "How does the analyzer avoid paying for the same LLM review twice when SQS redelivers a message?", "evidence": ["skips jobs that are already"] },
+  { "id": "hakem-2", "doc": "hakem", "crossLingual": true, "question": "Bitmiş değerlendirme raporları Redis'te ne kadar süre tutuluyor?", "evidence": ["cached in Redis for an hour", "TTL 1 h"] },
+  { "id": "hakem-3", "doc": "hakem", "crossLingual": false, "question": "What bug did Turkish lower-casing cause in the rule-based checks?", "evidence": ["ıntroduction"] },
+  { "id": "hakem-4", "doc": "hakem", "crossLingual": false, "question": "What happens if a manuscript contains hidden instructions aimed at the reviewer model?", "evidence": ["injection_attempt_detected", "metnin içine hakeme yönelik talimat"] },
+
+  { "id": "sonar-1", "doc": "passive-sonar", "crossLingual": true, "question": "Pasif sonar modelinde tek bir 10 saniyelik pencerenin doğruluğu ne kadar?", "evidence": ["60.3%"] },
+  { "id": "sonar-2", "doc": "passive-sonar", "crossLingual": false, "question": "What selective accuracy and coverage does the confidence gate reach?", "evidence": ["92.9% selective accuracy at 68.9% coverage"] },
+  { "id": "sonar-3", "doc": "passive-sonar", "crossLingual": false, "question": "How many audio windows are needed before a contact can be declared confident?", "evidence": ["fewer than five windows", "n ≥ 5 windows"] },
+  { "id": "sonar-4", "doc": "passive-sonar", "crossLingual": false, "question": "What is the CPU inference latency per sonar window?", "evidence": ["16 ms"] },
+
+  { "id": "polip-1", "doc": "polip-tespit", "crossLingual": false, "question": "Modeller polipsiz kolon görüntülerinde neden çok yanlış alarm veriyor?", "evidence": ["polipsiz görüntü görmedi"] },
+  { "id": "polip-2", "doc": "polip-tespit", "crossLingual": false, "question": "CVC-ClinicDB dış testinde U-Net'in Dice skoru nedir?", "evidence": ["0.851"] },
+  { "id": "polip-3", "doc": "polip-tespit", "crossLingual": false, "question": "Görüntünün yüzde birinden küçük poliplerde lezyon duyarlılığı ne kadar?", "evidence": ["0.46"] },
+  { "id": "polip-4", "doc": "polip-tespit", "crossLingual": true, "question": "Was specular reflection the cause of the missed polyps?", "evidence": ["Elenen hipotez"] },
+
+  { "id": "radar-1", "doc": "radar-tr-modul-phm", "crossLingual": false, "question": "T/R modülü arıza tespitinde RandomForest'ın yanlış alarm oranı nedir?", "evidence": ["0.9%"] },
+  { "id": "radar-2", "doc": "radar-tr-modul-phm", "crossLingual": false, "question": "Ani konnektör arızası için kalan ömür neden hesaplanmıyor?", "evidence": ["kademeli bir ön belirtisi yok"] },
+  { "id": "radar-3", "doc": "radar-tr-modul-phm", "crossLingual": true, "question": "What fault isolation accuracy does the diagnosis classifier achieve?", "evidence": ["96.8%"] },
+  { "id": "radar-4", "doc": "radar-tr-modul-phm", "crossLingual": false, "question": "Eğitim ve test ayrımı neden satır bazlı değil de modül bazlı yapıldı?", "evidence": ["grup sızıntısını önlemek"] },
+
+  { "id": "sql-1", "doc": "sql-saldiri-tespit", "crossLingual": false, "question": "Model hiç görmediği bir gün ve saldırı senaryosunda saldırıların yüzde kaçını yakalıyor?", "evidence": ["%25,4"] },
+  { "id": "sql-2", "doc": "sql-saldiri-tespit", "crossLingual": false, "question": "Tek kurallı port eşiği yönteminin PR-AUC değeri kaç?", "evidence": ["0,765"] },
+  { "id": "sql-3", "doc": "sql-saldiri-tespit", "crossLingual": true, "question": "Which attack types are hard to separate using flow statistics alone?", "evidence": ["XSS, SQL Injection"] },
+  { "id": "sql-4", "doc": "sql-saldiri-tespit", "crossLingual": false, "question": "Veritabanına kaç ağ akışı yüklendi?", "evidence": ["16,2 milyon"] },
+
+  { "id": "stereo-1", "doc": "stereo-3d-mot", "crossLingual": false, "question": "What end-to-end frame rate does the stereo pipeline reach on the laptop CPU?", "evidence": ["5.84 FPS"] },
+  { "id": "stereo-2", "doc": "stereo-3d-mot", "crossLingual": true, "question": "Stereo eşleştirmede görüntü kaç şeride bölünerek paralelleştirildi?", "evidence": ["num_tiles=4"] },
+  { "id": "stereo-3", "doc": "stereo-3d-mot", "crossLingual": false, "question": "What D1-all error does the stereo depth reach on KITTI Stereo 2015?", "evidence": ["D1-all 20.4%"] },
+  { "id": "stereo-4", "doc": "stereo-3d-mot", "crossLingual": false, "question": "How much faster is detection on CUDA than on the CPU in steady state?", "evidence": ["12–17 ms vs ~52 ms"] },
+
+  { "id": "vexyron-1", "doc": "vexyron", "crossLingual": false, "question": "Tarayıcı hangi durumda NOT READY FOR PRODUCTION kararı veriyor?", "evidence": ["En az bir Critical/High bulgu var"] },
+  { "id": "vexyron-2", "doc": "vexyron", "crossLingual": false, "question": "Tek sayfa uygulamalarda yanlış pozitifleri azaltmak için hangi referans yanıt kullanılıyor?", "evidence": ["soft-404"] },
+  { "id": "vexyron-3", "doc": "vexyron", "crossLingual": true, "question": "How many deliberately planted vulnerabilities did the scanner detect?", "evidence": ["22'sini de otomatik"] },
+  { "id": "vexyron-4", "doc": "vexyron", "crossLingual": false, "question": "Gerekçesi boş bırakılmış kabul edilmiş bulgu kaydına ne olur?", "evidence": ["sessizce yok sayılır"] },
+
+  { "id": "syncledger-1", "doc": "syncledger", "crossLingual": false, "question": "İki cihaz aynı kaydı değiştirdiğinde çakışma nasıl tespit ediliyor?", "evidence": ["syncedVersion"] },
+  { "id": "syncledger-2", "doc": "syncledger", "crossLingual": false, "question": "Çakışma penceresi kullanıcıya hangi çözüm seçeneklerini sunuyor?", "evidence": ["Sunucu sürümünü kabul et"] },
+  { "id": "syncledger-3", "doc": "syncledger", "crossLingual": true, "question": "How are changes made while offline pushed to Firestore?", "evidence": ["outbox pattern"] },
+  { "id": "syncledger-4", "doc": "syncledger", "crossLingual": false, "question": "Uygulamada kaç Jest testi var?", "evidence": ["17 test"] },
+
+  { "id": "geocommand-1", "doc": "geocommand", "crossLingual": false, "question": "NMEA seri port akışının varsayılan hat ayarı nedir?", "evidence": ["4800 baud 8N1"] },
+  { "id": "geocommand-2", "doc": "geocommand", "crossLingual": false, "question": "Plugin'ler neden ayrı bir yükleme bağlamında çalıştırılıyor?", "evidence": ["AssemblyLoadContext"] },
+  { "id": "geocommand-3", "doc": "geocommand", "crossLingual": false, "question": "Bir gRPC abonesinin bekleyen güncelleme tamponu dolarsa ne olur?", "evidence": ["RESOURCE_EXHAUSTED"] },
+  { "id": "geocommand-4", "doc": "geocommand", "crossLingual": true, "question": "Why is decimal used instead of double when parsing fractional seconds?", "evidence": ["05.0599999"] }
+]
